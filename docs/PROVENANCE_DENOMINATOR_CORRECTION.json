@@ -1,0 +1,7 @@
+{
+  "raw_provenance_summary_absent_or_root_errors": 30,
+  "correct_all_managers_absent_nonroot_errors": 27,
+  "known_root_wrong_assignments": 3,
+  "cause": "The post-audit convenience count used not manager_present, which also includes known roots. Frozen evaluator metrics correctly require a nonempty true manager set.",
+  "action": "Preserve the original post-audit output and frozen code; use this explicit correction and MANAGER_VISIBILITY_STRATA for reporting. No inference, truth, or primary metrics changed."
+}

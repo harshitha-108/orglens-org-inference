@@ -1,0 +1,4538 @@
+{
+  "version": "product-recovery-v1-scale500.1",
+  "scope": "complete scale-up evaluation under frozen synthetic distribution; NOT another independent held-out validation",
+  "companies": [
+    {
+      "index": 0,
+      "generator_index": 0,
+      "replicate": 0,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090400,
+      "target_employees": 120
+    },
+    {
+      "index": 1,
+      "generator_index": 1,
+      "replicate": 0,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090401,
+      "target_employees": 160
+    },
+    {
+      "index": 2,
+      "generator_index": 2,
+      "replicate": 0,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090402,
+      "target_employees": 200
+    },
+    {
+      "index": 3,
+      "generator_index": 0,
+      "replicate": 1,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090403,
+      "target_employees": 120
+    },
+    {
+      "index": 4,
+      "generator_index": 1,
+      "replicate": 1,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090404,
+      "target_employees": 160
+    },
+    {
+      "index": 5,
+      "generator_index": 2,
+      "replicate": 1,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090405,
+      "target_employees": 200
+    },
+    {
+      "index": 6,
+      "generator_index": 0,
+      "replicate": 2,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090406,
+      "target_employees": 120
+    },
+    {
+      "index": 7,
+      "generator_index": 1,
+      "replicate": 2,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090407,
+      "target_employees": 160
+    },
+    {
+      "index": 8,
+      "generator_index": 2,
+      "replicate": 2,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090408,
+      "target_employees": 200
+    },
+    {
+      "index": 9,
+      "generator_index": 0,
+      "replicate": 3,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090409,
+      "target_employees": 120
+    },
+    {
+      "index": 10,
+      "generator_index": 1,
+      "replicate": 3,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090410,
+      "target_employees": 160
+    },
+    {
+      "index": 11,
+      "generator_index": 2,
+      "replicate": 3,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090411,
+      "target_employees": 200
+    },
+    {
+      "index": 12,
+      "generator_index": 0,
+      "replicate": 4,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090412,
+      "target_employees": 120
+    },
+    {
+      "index": 13,
+      "generator_index": 1,
+      "replicate": 4,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090413,
+      "target_employees": 160
+    },
+    {
+      "index": 14,
+      "generator_index": 2,
+      "replicate": 4,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090414,
+      "target_employees": 200
+    },
+    {
+      "index": 15,
+      "generator_index": 0,
+      "replicate": 5,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090415,
+      "target_employees": 120
+    },
+    {
+      "index": 16,
+      "generator_index": 1,
+      "replicate": 5,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090416,
+      "target_employees": 160
+    },
+    {
+      "index": 17,
+      "generator_index": 2,
+      "replicate": 5,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090417,
+      "target_employees": 200
+    },
+    {
+      "index": 18,
+      "generator_index": 0,
+      "replicate": 6,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090418,
+      "target_employees": 120
+    },
+    {
+      "index": 19,
+      "generator_index": 1,
+      "replicate": 6,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090419,
+      "target_employees": 160
+    },
+    {
+      "index": 20,
+      "generator_index": 2,
+      "replicate": 6,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090420,
+      "target_employees": 200
+    },
+    {
+      "index": 21,
+      "generator_index": 0,
+      "replicate": 7,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090421,
+      "target_employees": 120
+    },
+    {
+      "index": 22,
+      "generator_index": 1,
+      "replicate": 7,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090422,
+      "target_employees": 160
+    },
+    {
+      "index": 23,
+      "generator_index": 2,
+      "replicate": 7,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090423,
+      "target_employees": 200
+    },
+    {
+      "index": 24,
+      "generator_index": 0,
+      "replicate": 8,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090424,
+      "target_employees": 120
+    },
+    {
+      "index": 25,
+      "generator_index": 1,
+      "replicate": 8,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090425,
+      "target_employees": 160
+    },
+    {
+      "index": 26,
+      "generator_index": 2,
+      "replicate": 8,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090426,
+      "target_employees": 200
+    },
+    {
+      "index": 27,
+      "generator_index": 0,
+      "replicate": 9,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090427,
+      "target_employees": 120
+    },
+    {
+      "index": 28,
+      "generator_index": 1,
+      "replicate": 9,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090428,
+      "target_employees": 160
+    },
+    {
+      "index": 29,
+      "generator_index": 2,
+      "replicate": 9,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090429,
+      "target_employees": 200
+    },
+    {
+      "index": 30,
+      "generator_index": 0,
+      "replicate": 10,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090430,
+      "target_employees": 120
+    },
+    {
+      "index": 31,
+      "generator_index": 1,
+      "replicate": 10,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090431,
+      "target_employees": 160
+    },
+    {
+      "index": 32,
+      "generator_index": 2,
+      "replicate": 10,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090432,
+      "target_employees": 200
+    },
+    {
+      "index": 33,
+      "generator_index": 0,
+      "replicate": 11,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090433,
+      "target_employees": 120
+    },
+    {
+      "index": 34,
+      "generator_index": 1,
+      "replicate": 11,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090434,
+      "target_employees": 160
+    },
+    {
+      "index": 35,
+      "generator_index": 2,
+      "replicate": 11,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090435,
+      "target_employees": 200
+    },
+    {
+      "index": 36,
+      "generator_index": 0,
+      "replicate": 12,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090436,
+      "target_employees": 120
+    },
+    {
+      "index": 37,
+      "generator_index": 1,
+      "replicate": 12,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090437,
+      "target_employees": 160
+    },
+    {
+      "index": 38,
+      "generator_index": 2,
+      "replicate": 12,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090438,
+      "target_employees": 200
+    },
+    {
+      "index": 39,
+      "generator_index": 0,
+      "replicate": 13,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090439,
+      "target_employees": 120
+    },
+    {
+      "index": 40,
+      "generator_index": 1,
+      "replicate": 13,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090440,
+      "target_employees": 160
+    },
+    {
+      "index": 41,
+      "generator_index": 2,
+      "replicate": 13,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090441,
+      "target_employees": 200
+    },
+    {
+      "index": 42,
+      "generator_index": 0,
+      "replicate": 14,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090442,
+      "target_employees": 120
+    },
+    {
+      "index": 43,
+      "generator_index": 1,
+      "replicate": 14,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090443,
+      "target_employees": 160
+    },
+    {
+      "index": 44,
+      "generator_index": 2,
+      "replicate": 14,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090444,
+      "target_employees": 200
+    },
+    {
+      "index": 45,
+      "generator_index": 0,
+      "replicate": 15,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090445,
+      "target_employees": 120
+    },
+    {
+      "index": 46,
+      "generator_index": 1,
+      "replicate": 15,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090446,
+      "target_employees": 160
+    },
+    {
+      "index": 47,
+      "generator_index": 2,
+      "replicate": 15,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090447,
+      "target_employees": 200
+    },
+    {
+      "index": 48,
+      "generator_index": 0,
+      "replicate": 16,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090448,
+      "target_employees": 120
+    },
+    {
+      "index": 49,
+      "generator_index": 1,
+      "replicate": 16,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090449,
+      "target_employees": 160
+    },
+    {
+      "index": 50,
+      "generator_index": 2,
+      "replicate": 16,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090450,
+      "target_employees": 200
+    },
+    {
+      "index": 51,
+      "generator_index": 0,
+      "replicate": 17,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090451,
+      "target_employees": 120
+    },
+    {
+      "index": 52,
+      "generator_index": 1,
+      "replicate": 17,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090452,
+      "target_employees": 160
+    },
+    {
+      "index": 53,
+      "generator_index": 2,
+      "replicate": 17,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090453,
+      "target_employees": 200
+    },
+    {
+      "index": 54,
+      "generator_index": 0,
+      "replicate": 18,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090454,
+      "target_employees": 120
+    },
+    {
+      "index": 55,
+      "generator_index": 1,
+      "replicate": 18,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090455,
+      "target_employees": 160
+    },
+    {
+      "index": 56,
+      "generator_index": 2,
+      "replicate": 18,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090456,
+      "target_employees": 200
+    },
+    {
+      "index": 57,
+      "generator_index": 0,
+      "replicate": 19,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090457,
+      "target_employees": 120
+    },
+    {
+      "index": 58,
+      "generator_index": 1,
+      "replicate": 19,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090458,
+      "target_employees": 160
+    },
+    {
+      "index": 59,
+      "generator_index": 2,
+      "replicate": 19,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090459,
+      "target_employees": 200
+    },
+    {
+      "index": 60,
+      "generator_index": 0,
+      "replicate": 20,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090460,
+      "target_employees": 120
+    },
+    {
+      "index": 61,
+      "generator_index": 1,
+      "replicate": 20,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090461,
+      "target_employees": 160
+    },
+    {
+      "index": 62,
+      "generator_index": 2,
+      "replicate": 20,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090462,
+      "target_employees": 200
+    },
+    {
+      "index": 63,
+      "generator_index": 0,
+      "replicate": 21,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090463,
+      "target_employees": 120
+    },
+    {
+      "index": 64,
+      "generator_index": 1,
+      "replicate": 21,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090464,
+      "target_employees": 160
+    },
+    {
+      "index": 65,
+      "generator_index": 2,
+      "replicate": 21,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090465,
+      "target_employees": 200
+    },
+    {
+      "index": 66,
+      "generator_index": 0,
+      "replicate": 22,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090466,
+      "target_employees": 120
+    },
+    {
+      "index": 67,
+      "generator_index": 1,
+      "replicate": 22,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090467,
+      "target_employees": 160
+    },
+    {
+      "index": 68,
+      "generator_index": 2,
+      "replicate": 22,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090468,
+      "target_employees": 200
+    },
+    {
+      "index": 69,
+      "generator_index": 0,
+      "replicate": 23,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090469,
+      "target_employees": 120
+    },
+    {
+      "index": 70,
+      "generator_index": 1,
+      "replicate": 23,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090470,
+      "target_employees": 160
+    },
+    {
+      "index": 71,
+      "generator_index": 2,
+      "replicate": 23,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090471,
+      "target_employees": 200
+    },
+    {
+      "index": 72,
+      "generator_index": 0,
+      "replicate": 24,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090472,
+      "target_employees": 120
+    },
+    {
+      "index": 73,
+      "generator_index": 1,
+      "replicate": 24,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090473,
+      "target_employees": 160
+    },
+    {
+      "index": 74,
+      "generator_index": 2,
+      "replicate": 24,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090474,
+      "target_employees": 200
+    },
+    {
+      "index": 75,
+      "generator_index": 0,
+      "replicate": 25,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090475,
+      "target_employees": 120
+    },
+    {
+      "index": 76,
+      "generator_index": 1,
+      "replicate": 25,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090476,
+      "target_employees": 160
+    },
+    {
+      "index": 77,
+      "generator_index": 2,
+      "replicate": 25,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090477,
+      "target_employees": 200
+    },
+    {
+      "index": 78,
+      "generator_index": 0,
+      "replicate": 26,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090478,
+      "target_employees": 120
+    },
+    {
+      "index": 79,
+      "generator_index": 1,
+      "replicate": 26,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090479,
+      "target_employees": 160
+    },
+    {
+      "index": 80,
+      "generator_index": 2,
+      "replicate": 26,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090480,
+      "target_employees": 200
+    },
+    {
+      "index": 81,
+      "generator_index": 0,
+      "replicate": 27,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090481,
+      "target_employees": 120
+    },
+    {
+      "index": 82,
+      "generator_index": 1,
+      "replicate": 27,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090482,
+      "target_employees": 160
+    },
+    {
+      "index": 83,
+      "generator_index": 2,
+      "replicate": 27,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090483,
+      "target_employees": 200
+    },
+    {
+      "index": 84,
+      "generator_index": 0,
+      "replicate": 28,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090484,
+      "target_employees": 120
+    },
+    {
+      "index": 85,
+      "generator_index": 1,
+      "replicate": 28,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090485,
+      "target_employees": 160
+    },
+    {
+      "index": 86,
+      "generator_index": 2,
+      "replicate": 28,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090486,
+      "target_employees": 200
+    },
+    {
+      "index": 87,
+      "generator_index": 0,
+      "replicate": 29,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090487,
+      "target_employees": 120
+    },
+    {
+      "index": 88,
+      "generator_index": 1,
+      "replicate": 29,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090488,
+      "target_employees": 160
+    },
+    {
+      "index": 89,
+      "generator_index": 2,
+      "replicate": 29,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090489,
+      "target_employees": 200
+    },
+    {
+      "index": 90,
+      "generator_index": 0,
+      "replicate": 30,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090490,
+      "target_employees": 120
+    },
+    {
+      "index": 91,
+      "generator_index": 1,
+      "replicate": 30,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090491,
+      "target_employees": 160
+    },
+    {
+      "index": 92,
+      "generator_index": 2,
+      "replicate": 30,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090492,
+      "target_employees": 200
+    },
+    {
+      "index": 93,
+      "generator_index": 0,
+      "replicate": 31,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090493,
+      "target_employees": 120
+    },
+    {
+      "index": 94,
+      "generator_index": 1,
+      "replicate": 31,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090494,
+      "target_employees": 160
+    },
+    {
+      "index": 95,
+      "generator_index": 2,
+      "replicate": 31,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090495,
+      "target_employees": 200
+    },
+    {
+      "index": 96,
+      "generator_index": 0,
+      "replicate": 32,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090496,
+      "target_employees": 120
+    },
+    {
+      "index": 97,
+      "generator_index": 1,
+      "replicate": 32,
+      "archetype": "product",
+      "disclosure": "selective",
+      "seed": 4090497,
+      "target_employees": 160
+    },
+    {
+      "index": 98,
+      "generator_index": 2,
+      "replicate": 32,
+      "archetype": "product",
+      "disclosure": "extensive",
+      "seed": 4090498,
+      "target_employees": 200
+    },
+    {
+      "index": 99,
+      "generator_index": 0,
+      "replicate": 33,
+      "archetype": "product",
+      "disclosure": "low",
+      "seed": 4090499,
+      "target_employees": 120
+    },
+    {
+      "index": 100,
+      "generator_index": 4,
+      "replicate": 0,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090500,
+      "target_employees": 160
+    },
+    {
+      "index": 101,
+      "generator_index": 5,
+      "replicate": 0,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090501,
+      "target_employees": 200
+    },
+    {
+      "index": 102,
+      "generator_index": 3,
+      "replicate": 0,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090502,
+      "target_employees": 120
+    },
+    {
+      "index": 103,
+      "generator_index": 4,
+      "replicate": 1,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090503,
+      "target_employees": 160
+    },
+    {
+      "index": 104,
+      "generator_index": 5,
+      "replicate": 1,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090504,
+      "target_employees": 200
+    },
+    {
+      "index": 105,
+      "generator_index": 3,
+      "replicate": 1,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090505,
+      "target_employees": 120
+    },
+    {
+      "index": 106,
+      "generator_index": 4,
+      "replicate": 2,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090506,
+      "target_employees": 160
+    },
+    {
+      "index": 107,
+      "generator_index": 5,
+      "replicate": 2,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090507,
+      "target_employees": 200
+    },
+    {
+      "index": 108,
+      "generator_index": 3,
+      "replicate": 2,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090508,
+      "target_employees": 120
+    },
+    {
+      "index": 109,
+      "generator_index": 4,
+      "replicate": 3,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090509,
+      "target_employees": 160
+    },
+    {
+      "index": 110,
+      "generator_index": 5,
+      "replicate": 3,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090510,
+      "target_employees": 200
+    },
+    {
+      "index": 111,
+      "generator_index": 3,
+      "replicate": 3,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090511,
+      "target_employees": 120
+    },
+    {
+      "index": 112,
+      "generator_index": 4,
+      "replicate": 4,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090512,
+      "target_employees": 160
+    },
+    {
+      "index": 113,
+      "generator_index": 5,
+      "replicate": 4,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090513,
+      "target_employees": 200
+    },
+    {
+      "index": 114,
+      "generator_index": 3,
+      "replicate": 4,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090514,
+      "target_employees": 120
+    },
+    {
+      "index": 115,
+      "generator_index": 4,
+      "replicate": 5,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090515,
+      "target_employees": 160
+    },
+    {
+      "index": 116,
+      "generator_index": 5,
+      "replicate": 5,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090516,
+      "target_employees": 200
+    },
+    {
+      "index": 117,
+      "generator_index": 3,
+      "replicate": 5,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090517,
+      "target_employees": 120
+    },
+    {
+      "index": 118,
+      "generator_index": 4,
+      "replicate": 6,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090518,
+      "target_employees": 160
+    },
+    {
+      "index": 119,
+      "generator_index": 5,
+      "replicate": 6,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090519,
+      "target_employees": 200
+    },
+    {
+      "index": 120,
+      "generator_index": 3,
+      "replicate": 6,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090520,
+      "target_employees": 120
+    },
+    {
+      "index": 121,
+      "generator_index": 4,
+      "replicate": 7,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090521,
+      "target_employees": 160
+    },
+    {
+      "index": 122,
+      "generator_index": 5,
+      "replicate": 7,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090522,
+      "target_employees": 200
+    },
+    {
+      "index": 123,
+      "generator_index": 3,
+      "replicate": 7,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090523,
+      "target_employees": 120
+    },
+    {
+      "index": 124,
+      "generator_index": 4,
+      "replicate": 8,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090524,
+      "target_employees": 160
+    },
+    {
+      "index": 125,
+      "generator_index": 5,
+      "replicate": 8,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090525,
+      "target_employees": 200
+    },
+    {
+      "index": 126,
+      "generator_index": 3,
+      "replicate": 8,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090526,
+      "target_employees": 120
+    },
+    {
+      "index": 127,
+      "generator_index": 4,
+      "replicate": 9,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090527,
+      "target_employees": 160
+    },
+    {
+      "index": 128,
+      "generator_index": 5,
+      "replicate": 9,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090528,
+      "target_employees": 200
+    },
+    {
+      "index": 129,
+      "generator_index": 3,
+      "replicate": 9,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090529,
+      "target_employees": 120
+    },
+    {
+      "index": 130,
+      "generator_index": 4,
+      "replicate": 10,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090530,
+      "target_employees": 160
+    },
+    {
+      "index": 131,
+      "generator_index": 5,
+      "replicate": 10,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090531,
+      "target_employees": 200
+    },
+    {
+      "index": 132,
+      "generator_index": 3,
+      "replicate": 10,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090532,
+      "target_employees": 120
+    },
+    {
+      "index": 133,
+      "generator_index": 4,
+      "replicate": 11,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090533,
+      "target_employees": 160
+    },
+    {
+      "index": 134,
+      "generator_index": 5,
+      "replicate": 11,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090534,
+      "target_employees": 200
+    },
+    {
+      "index": 135,
+      "generator_index": 3,
+      "replicate": 11,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090535,
+      "target_employees": 120
+    },
+    {
+      "index": 136,
+      "generator_index": 4,
+      "replicate": 12,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090536,
+      "target_employees": 160
+    },
+    {
+      "index": 137,
+      "generator_index": 5,
+      "replicate": 12,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090537,
+      "target_employees": 200
+    },
+    {
+      "index": 138,
+      "generator_index": 3,
+      "replicate": 12,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090538,
+      "target_employees": 120
+    },
+    {
+      "index": 139,
+      "generator_index": 4,
+      "replicate": 13,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090539,
+      "target_employees": 160
+    },
+    {
+      "index": 140,
+      "generator_index": 5,
+      "replicate": 13,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090540,
+      "target_employees": 200
+    },
+    {
+      "index": 141,
+      "generator_index": 3,
+      "replicate": 13,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090541,
+      "target_employees": 120
+    },
+    {
+      "index": 142,
+      "generator_index": 4,
+      "replicate": 14,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090542,
+      "target_employees": 160
+    },
+    {
+      "index": 143,
+      "generator_index": 5,
+      "replicate": 14,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090543,
+      "target_employees": 200
+    },
+    {
+      "index": 144,
+      "generator_index": 3,
+      "replicate": 14,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090544,
+      "target_employees": 120
+    },
+    {
+      "index": 145,
+      "generator_index": 4,
+      "replicate": 15,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090545,
+      "target_employees": 160
+    },
+    {
+      "index": 146,
+      "generator_index": 5,
+      "replicate": 15,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090546,
+      "target_employees": 200
+    },
+    {
+      "index": 147,
+      "generator_index": 3,
+      "replicate": 15,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090547,
+      "target_employees": 120
+    },
+    {
+      "index": 148,
+      "generator_index": 4,
+      "replicate": 16,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090548,
+      "target_employees": 160
+    },
+    {
+      "index": 149,
+      "generator_index": 5,
+      "replicate": 16,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090549,
+      "target_employees": 200
+    },
+    {
+      "index": 150,
+      "generator_index": 3,
+      "replicate": 16,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090550,
+      "target_employees": 120
+    },
+    {
+      "index": 151,
+      "generator_index": 4,
+      "replicate": 17,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090551,
+      "target_employees": 160
+    },
+    {
+      "index": 152,
+      "generator_index": 5,
+      "replicate": 17,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090552,
+      "target_employees": 200
+    },
+    {
+      "index": 153,
+      "generator_index": 3,
+      "replicate": 17,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090553,
+      "target_employees": 120
+    },
+    {
+      "index": 154,
+      "generator_index": 4,
+      "replicate": 18,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090554,
+      "target_employees": 160
+    },
+    {
+      "index": 155,
+      "generator_index": 5,
+      "replicate": 18,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090555,
+      "target_employees": 200
+    },
+    {
+      "index": 156,
+      "generator_index": 3,
+      "replicate": 18,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090556,
+      "target_employees": 120
+    },
+    {
+      "index": 157,
+      "generator_index": 4,
+      "replicate": 19,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090557,
+      "target_employees": 160
+    },
+    {
+      "index": 158,
+      "generator_index": 5,
+      "replicate": 19,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090558,
+      "target_employees": 200
+    },
+    {
+      "index": 159,
+      "generator_index": 3,
+      "replicate": 19,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090559,
+      "target_employees": 120
+    },
+    {
+      "index": 160,
+      "generator_index": 4,
+      "replicate": 20,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090560,
+      "target_employees": 160
+    },
+    {
+      "index": 161,
+      "generator_index": 5,
+      "replicate": 20,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090561,
+      "target_employees": 200
+    },
+    {
+      "index": 162,
+      "generator_index": 3,
+      "replicate": 20,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090562,
+      "target_employees": 120
+    },
+    {
+      "index": 163,
+      "generator_index": 4,
+      "replicate": 21,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090563,
+      "target_employees": 160
+    },
+    {
+      "index": 164,
+      "generator_index": 5,
+      "replicate": 21,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090564,
+      "target_employees": 200
+    },
+    {
+      "index": 165,
+      "generator_index": 3,
+      "replicate": 21,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090565,
+      "target_employees": 120
+    },
+    {
+      "index": 166,
+      "generator_index": 4,
+      "replicate": 22,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090566,
+      "target_employees": 160
+    },
+    {
+      "index": 167,
+      "generator_index": 5,
+      "replicate": 22,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090567,
+      "target_employees": 200
+    },
+    {
+      "index": 168,
+      "generator_index": 3,
+      "replicate": 22,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090568,
+      "target_employees": 120
+    },
+    {
+      "index": 169,
+      "generator_index": 4,
+      "replicate": 23,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090569,
+      "target_employees": 160
+    },
+    {
+      "index": 170,
+      "generator_index": 5,
+      "replicate": 23,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090570,
+      "target_employees": 200
+    },
+    {
+      "index": 171,
+      "generator_index": 3,
+      "replicate": 23,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090571,
+      "target_employees": 120
+    },
+    {
+      "index": 172,
+      "generator_index": 4,
+      "replicate": 24,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090572,
+      "target_employees": 160
+    },
+    {
+      "index": 173,
+      "generator_index": 5,
+      "replicate": 24,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090573,
+      "target_employees": 200
+    },
+    {
+      "index": 174,
+      "generator_index": 3,
+      "replicate": 24,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090574,
+      "target_employees": 120
+    },
+    {
+      "index": 175,
+      "generator_index": 4,
+      "replicate": 25,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090575,
+      "target_employees": 160
+    },
+    {
+      "index": 176,
+      "generator_index": 5,
+      "replicate": 25,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090576,
+      "target_employees": 200
+    },
+    {
+      "index": 177,
+      "generator_index": 3,
+      "replicate": 25,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090577,
+      "target_employees": 120
+    },
+    {
+      "index": 178,
+      "generator_index": 4,
+      "replicate": 26,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090578,
+      "target_employees": 160
+    },
+    {
+      "index": 179,
+      "generator_index": 5,
+      "replicate": 26,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090579,
+      "target_employees": 200
+    },
+    {
+      "index": 180,
+      "generator_index": 3,
+      "replicate": 26,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090580,
+      "target_employees": 120
+    },
+    {
+      "index": 181,
+      "generator_index": 4,
+      "replicate": 27,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090581,
+      "target_employees": 160
+    },
+    {
+      "index": 182,
+      "generator_index": 5,
+      "replicate": 27,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090582,
+      "target_employees": 200
+    },
+    {
+      "index": 183,
+      "generator_index": 3,
+      "replicate": 27,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090583,
+      "target_employees": 120
+    },
+    {
+      "index": 184,
+      "generator_index": 4,
+      "replicate": 28,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090584,
+      "target_employees": 160
+    },
+    {
+      "index": 185,
+      "generator_index": 5,
+      "replicate": 28,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090585,
+      "target_employees": 200
+    },
+    {
+      "index": 186,
+      "generator_index": 3,
+      "replicate": 28,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090586,
+      "target_employees": 120
+    },
+    {
+      "index": 187,
+      "generator_index": 4,
+      "replicate": 29,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090587,
+      "target_employees": 160
+    },
+    {
+      "index": 188,
+      "generator_index": 5,
+      "replicate": 29,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090588,
+      "target_employees": 200
+    },
+    {
+      "index": 189,
+      "generator_index": 3,
+      "replicate": 29,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090589,
+      "target_employees": 120
+    },
+    {
+      "index": 190,
+      "generator_index": 4,
+      "replicate": 30,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090590,
+      "target_employees": 160
+    },
+    {
+      "index": 191,
+      "generator_index": 5,
+      "replicate": 30,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090591,
+      "target_employees": 200
+    },
+    {
+      "index": 192,
+      "generator_index": 3,
+      "replicate": 30,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090592,
+      "target_employees": 120
+    },
+    {
+      "index": 193,
+      "generator_index": 4,
+      "replicate": 31,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090593,
+      "target_employees": 160
+    },
+    {
+      "index": 194,
+      "generator_index": 5,
+      "replicate": 31,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090594,
+      "target_employees": 200
+    },
+    {
+      "index": 195,
+      "generator_index": 3,
+      "replicate": 31,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090595,
+      "target_employees": 120
+    },
+    {
+      "index": 196,
+      "generator_index": 4,
+      "replicate": 32,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090596,
+      "target_employees": 160
+    },
+    {
+      "index": 197,
+      "generator_index": 5,
+      "replicate": 32,
+      "archetype": "regional_services",
+      "disclosure": "extensive",
+      "seed": 4090597,
+      "target_employees": 200
+    },
+    {
+      "index": 198,
+      "generator_index": 3,
+      "replicate": 32,
+      "archetype": "regional_services",
+      "disclosure": "low",
+      "seed": 4090598,
+      "target_employees": 120
+    },
+    {
+      "index": 199,
+      "generator_index": 4,
+      "replicate": 33,
+      "archetype": "regional_services",
+      "disclosure": "selective",
+      "seed": 4090599,
+      "target_employees": 160
+    },
+    {
+      "index": 200,
+      "generator_index": 8,
+      "replicate": 0,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090600,
+      "target_employees": 200
+    },
+    {
+      "index": 201,
+      "generator_index": 6,
+      "replicate": 0,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090601,
+      "target_employees": 120
+    },
+    {
+      "index": 202,
+      "generator_index": 7,
+      "replicate": 0,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090602,
+      "target_employees": 160
+    },
+    {
+      "index": 203,
+      "generator_index": 8,
+      "replicate": 1,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090603,
+      "target_employees": 200
+    },
+    {
+      "index": 204,
+      "generator_index": 6,
+      "replicate": 1,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090604,
+      "target_employees": 120
+    },
+    {
+      "index": 205,
+      "generator_index": 7,
+      "replicate": 1,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090605,
+      "target_employees": 160
+    },
+    {
+      "index": 206,
+      "generator_index": 8,
+      "replicate": 2,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090606,
+      "target_employees": 200
+    },
+    {
+      "index": 207,
+      "generator_index": 6,
+      "replicate": 2,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090607,
+      "target_employees": 120
+    },
+    {
+      "index": 208,
+      "generator_index": 7,
+      "replicate": 2,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090608,
+      "target_employees": 160
+    },
+    {
+      "index": 209,
+      "generator_index": 8,
+      "replicate": 3,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090609,
+      "target_employees": 200
+    },
+    {
+      "index": 210,
+      "generator_index": 6,
+      "replicate": 3,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090610,
+      "target_employees": 120
+    },
+    {
+      "index": 211,
+      "generator_index": 7,
+      "replicate": 3,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090611,
+      "target_employees": 160
+    },
+    {
+      "index": 212,
+      "generator_index": 8,
+      "replicate": 4,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090612,
+      "target_employees": 200
+    },
+    {
+      "index": 213,
+      "generator_index": 6,
+      "replicate": 4,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090613,
+      "target_employees": 120
+    },
+    {
+      "index": 214,
+      "generator_index": 7,
+      "replicate": 4,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090614,
+      "target_employees": 160
+    },
+    {
+      "index": 215,
+      "generator_index": 8,
+      "replicate": 5,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090615,
+      "target_employees": 200
+    },
+    {
+      "index": 216,
+      "generator_index": 6,
+      "replicate": 5,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090616,
+      "target_employees": 120
+    },
+    {
+      "index": 217,
+      "generator_index": 7,
+      "replicate": 5,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090617,
+      "target_employees": 160
+    },
+    {
+      "index": 218,
+      "generator_index": 8,
+      "replicate": 6,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090618,
+      "target_employees": 200
+    },
+    {
+      "index": 219,
+      "generator_index": 6,
+      "replicate": 6,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090619,
+      "target_employees": 120
+    },
+    {
+      "index": 220,
+      "generator_index": 7,
+      "replicate": 6,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090620,
+      "target_employees": 160
+    },
+    {
+      "index": 221,
+      "generator_index": 8,
+      "replicate": 7,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090621,
+      "target_employees": 200
+    },
+    {
+      "index": 222,
+      "generator_index": 6,
+      "replicate": 7,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090622,
+      "target_employees": 120
+    },
+    {
+      "index": 223,
+      "generator_index": 7,
+      "replicate": 7,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090623,
+      "target_employees": 160
+    },
+    {
+      "index": 224,
+      "generator_index": 8,
+      "replicate": 8,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090624,
+      "target_employees": 200
+    },
+    {
+      "index": 225,
+      "generator_index": 6,
+      "replicate": 8,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090625,
+      "target_employees": 120
+    },
+    {
+      "index": 226,
+      "generator_index": 7,
+      "replicate": 8,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090626,
+      "target_employees": 160
+    },
+    {
+      "index": 227,
+      "generator_index": 8,
+      "replicate": 9,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090627,
+      "target_employees": 200
+    },
+    {
+      "index": 228,
+      "generator_index": 6,
+      "replicate": 9,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090628,
+      "target_employees": 120
+    },
+    {
+      "index": 229,
+      "generator_index": 7,
+      "replicate": 9,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090629,
+      "target_employees": 160
+    },
+    {
+      "index": 230,
+      "generator_index": 8,
+      "replicate": 10,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090630,
+      "target_employees": 200
+    },
+    {
+      "index": 231,
+      "generator_index": 6,
+      "replicate": 10,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090631,
+      "target_employees": 120
+    },
+    {
+      "index": 232,
+      "generator_index": 7,
+      "replicate": 10,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090632,
+      "target_employees": 160
+    },
+    {
+      "index": 233,
+      "generator_index": 8,
+      "replicate": 11,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090633,
+      "target_employees": 200
+    },
+    {
+      "index": 234,
+      "generator_index": 6,
+      "replicate": 11,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090634,
+      "target_employees": 120
+    },
+    {
+      "index": 235,
+      "generator_index": 7,
+      "replicate": 11,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090635,
+      "target_employees": 160
+    },
+    {
+      "index": 236,
+      "generator_index": 8,
+      "replicate": 12,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090636,
+      "target_employees": 200
+    },
+    {
+      "index": 237,
+      "generator_index": 6,
+      "replicate": 12,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090637,
+      "target_employees": 120
+    },
+    {
+      "index": 238,
+      "generator_index": 7,
+      "replicate": 12,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090638,
+      "target_employees": 160
+    },
+    {
+      "index": 239,
+      "generator_index": 8,
+      "replicate": 13,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090639,
+      "target_employees": 200
+    },
+    {
+      "index": 240,
+      "generator_index": 6,
+      "replicate": 13,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090640,
+      "target_employees": 120
+    },
+    {
+      "index": 241,
+      "generator_index": 7,
+      "replicate": 13,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090641,
+      "target_employees": 160
+    },
+    {
+      "index": 242,
+      "generator_index": 8,
+      "replicate": 14,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090642,
+      "target_employees": 200
+    },
+    {
+      "index": 243,
+      "generator_index": 6,
+      "replicate": 14,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090643,
+      "target_employees": 120
+    },
+    {
+      "index": 244,
+      "generator_index": 7,
+      "replicate": 14,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090644,
+      "target_employees": 160
+    },
+    {
+      "index": 245,
+      "generator_index": 8,
+      "replicate": 15,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090645,
+      "target_employees": 200
+    },
+    {
+      "index": 246,
+      "generator_index": 6,
+      "replicate": 15,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090646,
+      "target_employees": 120
+    },
+    {
+      "index": 247,
+      "generator_index": 7,
+      "replicate": 15,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090647,
+      "target_employees": 160
+    },
+    {
+      "index": 248,
+      "generator_index": 8,
+      "replicate": 16,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090648,
+      "target_employees": 200
+    },
+    {
+      "index": 249,
+      "generator_index": 6,
+      "replicate": 16,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090649,
+      "target_employees": 120
+    },
+    {
+      "index": 250,
+      "generator_index": 7,
+      "replicate": 16,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090650,
+      "target_employees": 160
+    },
+    {
+      "index": 251,
+      "generator_index": 8,
+      "replicate": 17,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090651,
+      "target_employees": 200
+    },
+    {
+      "index": 252,
+      "generator_index": 6,
+      "replicate": 17,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090652,
+      "target_employees": 120
+    },
+    {
+      "index": 253,
+      "generator_index": 7,
+      "replicate": 17,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090653,
+      "target_employees": 160
+    },
+    {
+      "index": 254,
+      "generator_index": 8,
+      "replicate": 18,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090654,
+      "target_employees": 200
+    },
+    {
+      "index": 255,
+      "generator_index": 6,
+      "replicate": 18,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090655,
+      "target_employees": 120
+    },
+    {
+      "index": 256,
+      "generator_index": 7,
+      "replicate": 18,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090656,
+      "target_employees": 160
+    },
+    {
+      "index": 257,
+      "generator_index": 8,
+      "replicate": 19,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090657,
+      "target_employees": 200
+    },
+    {
+      "index": 258,
+      "generator_index": 6,
+      "replicate": 19,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090658,
+      "target_employees": 120
+    },
+    {
+      "index": 259,
+      "generator_index": 7,
+      "replicate": 19,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090659,
+      "target_employees": 160
+    },
+    {
+      "index": 260,
+      "generator_index": 8,
+      "replicate": 20,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090660,
+      "target_employees": 200
+    },
+    {
+      "index": 261,
+      "generator_index": 6,
+      "replicate": 20,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090661,
+      "target_employees": 120
+    },
+    {
+      "index": 262,
+      "generator_index": 7,
+      "replicate": 20,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090662,
+      "target_employees": 160
+    },
+    {
+      "index": 263,
+      "generator_index": 8,
+      "replicate": 21,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090663,
+      "target_employees": 200
+    },
+    {
+      "index": 264,
+      "generator_index": 6,
+      "replicate": 21,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090664,
+      "target_employees": 120
+    },
+    {
+      "index": 265,
+      "generator_index": 7,
+      "replicate": 21,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090665,
+      "target_employees": 160
+    },
+    {
+      "index": 266,
+      "generator_index": 8,
+      "replicate": 22,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090666,
+      "target_employees": 200
+    },
+    {
+      "index": 267,
+      "generator_index": 6,
+      "replicate": 22,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090667,
+      "target_employees": 120
+    },
+    {
+      "index": 268,
+      "generator_index": 7,
+      "replicate": 22,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090668,
+      "target_employees": 160
+    },
+    {
+      "index": 269,
+      "generator_index": 8,
+      "replicate": 23,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090669,
+      "target_employees": 200
+    },
+    {
+      "index": 270,
+      "generator_index": 6,
+      "replicate": 23,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090670,
+      "target_employees": 120
+    },
+    {
+      "index": 271,
+      "generator_index": 7,
+      "replicate": 23,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090671,
+      "target_employees": 160
+    },
+    {
+      "index": 272,
+      "generator_index": 8,
+      "replicate": 24,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090672,
+      "target_employees": 200
+    },
+    {
+      "index": 273,
+      "generator_index": 6,
+      "replicate": 24,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090673,
+      "target_employees": 120
+    },
+    {
+      "index": 274,
+      "generator_index": 7,
+      "replicate": 24,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090674,
+      "target_employees": 160
+    },
+    {
+      "index": 275,
+      "generator_index": 8,
+      "replicate": 25,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090675,
+      "target_employees": 200
+    },
+    {
+      "index": 276,
+      "generator_index": 6,
+      "replicate": 25,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090676,
+      "target_employees": 120
+    },
+    {
+      "index": 277,
+      "generator_index": 7,
+      "replicate": 25,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090677,
+      "target_employees": 160
+    },
+    {
+      "index": 278,
+      "generator_index": 8,
+      "replicate": 26,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090678,
+      "target_employees": 200
+    },
+    {
+      "index": 279,
+      "generator_index": 6,
+      "replicate": 26,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090679,
+      "target_employees": 120
+    },
+    {
+      "index": 280,
+      "generator_index": 7,
+      "replicate": 26,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090680,
+      "target_employees": 160
+    },
+    {
+      "index": 281,
+      "generator_index": 8,
+      "replicate": 27,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090681,
+      "target_employees": 200
+    },
+    {
+      "index": 282,
+      "generator_index": 6,
+      "replicate": 27,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090682,
+      "target_employees": 120
+    },
+    {
+      "index": 283,
+      "generator_index": 7,
+      "replicate": 27,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090683,
+      "target_employees": 160
+    },
+    {
+      "index": 284,
+      "generator_index": 8,
+      "replicate": 28,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090684,
+      "target_employees": 200
+    },
+    {
+      "index": 285,
+      "generator_index": 6,
+      "replicate": 28,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090685,
+      "target_employees": 120
+    },
+    {
+      "index": 286,
+      "generator_index": 7,
+      "replicate": 28,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090686,
+      "target_employees": 160
+    },
+    {
+      "index": 287,
+      "generator_index": 8,
+      "replicate": 29,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090687,
+      "target_employees": 200
+    },
+    {
+      "index": 288,
+      "generator_index": 6,
+      "replicate": 29,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090688,
+      "target_employees": 120
+    },
+    {
+      "index": 289,
+      "generator_index": 7,
+      "replicate": 29,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090689,
+      "target_employees": 160
+    },
+    {
+      "index": 290,
+      "generator_index": 8,
+      "replicate": 30,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090690,
+      "target_employees": 200
+    },
+    {
+      "index": 291,
+      "generator_index": 6,
+      "replicate": 30,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090691,
+      "target_employees": 120
+    },
+    {
+      "index": 292,
+      "generator_index": 7,
+      "replicate": 30,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090692,
+      "target_employees": 160
+    },
+    {
+      "index": 293,
+      "generator_index": 8,
+      "replicate": 31,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090693,
+      "target_employees": 200
+    },
+    {
+      "index": 294,
+      "generator_index": 6,
+      "replicate": 31,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090694,
+      "target_employees": 120
+    },
+    {
+      "index": 295,
+      "generator_index": 7,
+      "replicate": 31,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090695,
+      "target_employees": 160
+    },
+    {
+      "index": 296,
+      "generator_index": 8,
+      "replicate": 32,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090696,
+      "target_employees": 200
+    },
+    {
+      "index": 297,
+      "generator_index": 6,
+      "replicate": 32,
+      "archetype": "multi_site",
+      "disclosure": "low",
+      "seed": 4090697,
+      "target_employees": 120
+    },
+    {
+      "index": 298,
+      "generator_index": 7,
+      "replicate": 32,
+      "archetype": "multi_site",
+      "disclosure": "selective",
+      "seed": 4090698,
+      "target_employees": 160
+    },
+    {
+      "index": 299,
+      "generator_index": 8,
+      "replicate": 33,
+      "archetype": "multi_site",
+      "disclosure": "extensive",
+      "seed": 4090699,
+      "target_employees": 200
+    },
+    {
+      "index": 300,
+      "generator_index": 9,
+      "replicate": 0,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090700,
+      "target_employees": 120
+    },
+    {
+      "index": 301,
+      "generator_index": 10,
+      "replicate": 0,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090701,
+      "target_employees": 160
+    },
+    {
+      "index": 302,
+      "generator_index": 11,
+      "replicate": 0,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090702,
+      "target_employees": 200
+    },
+    {
+      "index": 303,
+      "generator_index": 9,
+      "replicate": 1,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090703,
+      "target_employees": 120
+    },
+    {
+      "index": 304,
+      "generator_index": 10,
+      "replicate": 1,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090704,
+      "target_employees": 160
+    },
+    {
+      "index": 305,
+      "generator_index": 11,
+      "replicate": 1,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090705,
+      "target_employees": 200
+    },
+    {
+      "index": 306,
+      "generator_index": 9,
+      "replicate": 2,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090706,
+      "target_employees": 120
+    },
+    {
+      "index": 307,
+      "generator_index": 10,
+      "replicate": 2,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090707,
+      "target_employees": 160
+    },
+    {
+      "index": 308,
+      "generator_index": 11,
+      "replicate": 2,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090708,
+      "target_employees": 200
+    },
+    {
+      "index": 309,
+      "generator_index": 9,
+      "replicate": 3,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090709,
+      "target_employees": 120
+    },
+    {
+      "index": 310,
+      "generator_index": 10,
+      "replicate": 3,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090710,
+      "target_employees": 160
+    },
+    {
+      "index": 311,
+      "generator_index": 11,
+      "replicate": 3,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090711,
+      "target_employees": 200
+    },
+    {
+      "index": 312,
+      "generator_index": 9,
+      "replicate": 4,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090712,
+      "target_employees": 120
+    },
+    {
+      "index": 313,
+      "generator_index": 10,
+      "replicate": 4,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090713,
+      "target_employees": 160
+    },
+    {
+      "index": 314,
+      "generator_index": 11,
+      "replicate": 4,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090714,
+      "target_employees": 200
+    },
+    {
+      "index": 315,
+      "generator_index": 9,
+      "replicate": 5,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090715,
+      "target_employees": 120
+    },
+    {
+      "index": 316,
+      "generator_index": 10,
+      "replicate": 5,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090716,
+      "target_employees": 160
+    },
+    {
+      "index": 317,
+      "generator_index": 11,
+      "replicate": 5,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090717,
+      "target_employees": 200
+    },
+    {
+      "index": 318,
+      "generator_index": 9,
+      "replicate": 6,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090718,
+      "target_employees": 120
+    },
+    {
+      "index": 319,
+      "generator_index": 10,
+      "replicate": 6,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090719,
+      "target_employees": 160
+    },
+    {
+      "index": 320,
+      "generator_index": 11,
+      "replicate": 6,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090720,
+      "target_employees": 200
+    },
+    {
+      "index": 321,
+      "generator_index": 9,
+      "replicate": 7,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090721,
+      "target_employees": 120
+    },
+    {
+      "index": 322,
+      "generator_index": 10,
+      "replicate": 7,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090722,
+      "target_employees": 160
+    },
+    {
+      "index": 323,
+      "generator_index": 11,
+      "replicate": 7,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090723,
+      "target_employees": 200
+    },
+    {
+      "index": 324,
+      "generator_index": 9,
+      "replicate": 8,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090724,
+      "target_employees": 120
+    },
+    {
+      "index": 325,
+      "generator_index": 10,
+      "replicate": 8,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090725,
+      "target_employees": 160
+    },
+    {
+      "index": 326,
+      "generator_index": 11,
+      "replicate": 8,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090726,
+      "target_employees": 200
+    },
+    {
+      "index": 327,
+      "generator_index": 9,
+      "replicate": 9,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090727,
+      "target_employees": 120
+    },
+    {
+      "index": 328,
+      "generator_index": 10,
+      "replicate": 9,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090728,
+      "target_employees": 160
+    },
+    {
+      "index": 329,
+      "generator_index": 11,
+      "replicate": 9,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090729,
+      "target_employees": 200
+    },
+    {
+      "index": 330,
+      "generator_index": 9,
+      "replicate": 10,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090730,
+      "target_employees": 120
+    },
+    {
+      "index": 331,
+      "generator_index": 10,
+      "replicate": 10,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090731,
+      "target_employees": 160
+    },
+    {
+      "index": 332,
+      "generator_index": 11,
+      "replicate": 10,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090732,
+      "target_employees": 200
+    },
+    {
+      "index": 333,
+      "generator_index": 9,
+      "replicate": 11,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090733,
+      "target_employees": 120
+    },
+    {
+      "index": 334,
+      "generator_index": 10,
+      "replicate": 11,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090734,
+      "target_employees": 160
+    },
+    {
+      "index": 335,
+      "generator_index": 11,
+      "replicate": 11,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090735,
+      "target_employees": 200
+    },
+    {
+      "index": 336,
+      "generator_index": 9,
+      "replicate": 12,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090736,
+      "target_employees": 120
+    },
+    {
+      "index": 337,
+      "generator_index": 10,
+      "replicate": 12,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090737,
+      "target_employees": 160
+    },
+    {
+      "index": 338,
+      "generator_index": 11,
+      "replicate": 12,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090738,
+      "target_employees": 200
+    },
+    {
+      "index": 339,
+      "generator_index": 9,
+      "replicate": 13,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090739,
+      "target_employees": 120
+    },
+    {
+      "index": 340,
+      "generator_index": 10,
+      "replicate": 13,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090740,
+      "target_employees": 160
+    },
+    {
+      "index": 341,
+      "generator_index": 11,
+      "replicate": 13,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090741,
+      "target_employees": 200
+    },
+    {
+      "index": 342,
+      "generator_index": 9,
+      "replicate": 14,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090742,
+      "target_employees": 120
+    },
+    {
+      "index": 343,
+      "generator_index": 10,
+      "replicate": 14,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090743,
+      "target_employees": 160
+    },
+    {
+      "index": 344,
+      "generator_index": 11,
+      "replicate": 14,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090744,
+      "target_employees": 200
+    },
+    {
+      "index": 345,
+      "generator_index": 9,
+      "replicate": 15,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090745,
+      "target_employees": 120
+    },
+    {
+      "index": 346,
+      "generator_index": 10,
+      "replicate": 15,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090746,
+      "target_employees": 160
+    },
+    {
+      "index": 347,
+      "generator_index": 11,
+      "replicate": 15,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090747,
+      "target_employees": 200
+    },
+    {
+      "index": 348,
+      "generator_index": 9,
+      "replicate": 16,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090748,
+      "target_employees": 120
+    },
+    {
+      "index": 349,
+      "generator_index": 10,
+      "replicate": 16,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090749,
+      "target_employees": 160
+    },
+    {
+      "index": 350,
+      "generator_index": 11,
+      "replicate": 16,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090750,
+      "target_employees": 200
+    },
+    {
+      "index": 351,
+      "generator_index": 9,
+      "replicate": 17,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090751,
+      "target_employees": 120
+    },
+    {
+      "index": 352,
+      "generator_index": 10,
+      "replicate": 17,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090752,
+      "target_employees": 160
+    },
+    {
+      "index": 353,
+      "generator_index": 11,
+      "replicate": 17,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090753,
+      "target_employees": 200
+    },
+    {
+      "index": 354,
+      "generator_index": 9,
+      "replicate": 18,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090754,
+      "target_employees": 120
+    },
+    {
+      "index": 355,
+      "generator_index": 10,
+      "replicate": 18,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090755,
+      "target_employees": 160
+    },
+    {
+      "index": 356,
+      "generator_index": 11,
+      "replicate": 18,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090756,
+      "target_employees": 200
+    },
+    {
+      "index": 357,
+      "generator_index": 9,
+      "replicate": 19,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090757,
+      "target_employees": 120
+    },
+    {
+      "index": 358,
+      "generator_index": 10,
+      "replicate": 19,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090758,
+      "target_employees": 160
+    },
+    {
+      "index": 359,
+      "generator_index": 11,
+      "replicate": 19,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090759,
+      "target_employees": 200
+    },
+    {
+      "index": 360,
+      "generator_index": 9,
+      "replicate": 20,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090760,
+      "target_employees": 120
+    },
+    {
+      "index": 361,
+      "generator_index": 10,
+      "replicate": 20,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090761,
+      "target_employees": 160
+    },
+    {
+      "index": 362,
+      "generator_index": 11,
+      "replicate": 20,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090762,
+      "target_employees": 200
+    },
+    {
+      "index": 363,
+      "generator_index": 9,
+      "replicate": 21,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090763,
+      "target_employees": 120
+    },
+    {
+      "index": 364,
+      "generator_index": 10,
+      "replicate": 21,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090764,
+      "target_employees": 160
+    },
+    {
+      "index": 365,
+      "generator_index": 11,
+      "replicate": 21,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090765,
+      "target_employees": 200
+    },
+    {
+      "index": 366,
+      "generator_index": 9,
+      "replicate": 22,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090766,
+      "target_employees": 120
+    },
+    {
+      "index": 367,
+      "generator_index": 10,
+      "replicate": 22,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090767,
+      "target_employees": 160
+    },
+    {
+      "index": 368,
+      "generator_index": 11,
+      "replicate": 22,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090768,
+      "target_employees": 200
+    },
+    {
+      "index": 369,
+      "generator_index": 9,
+      "replicate": 23,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090769,
+      "target_employees": 120
+    },
+    {
+      "index": 370,
+      "generator_index": 10,
+      "replicate": 23,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090770,
+      "target_employees": 160
+    },
+    {
+      "index": 371,
+      "generator_index": 11,
+      "replicate": 23,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090771,
+      "target_employees": 200
+    },
+    {
+      "index": 372,
+      "generator_index": 9,
+      "replicate": 24,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090772,
+      "target_employees": 120
+    },
+    {
+      "index": 373,
+      "generator_index": 10,
+      "replicate": 24,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090773,
+      "target_employees": 160
+    },
+    {
+      "index": 374,
+      "generator_index": 11,
+      "replicate": 24,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090774,
+      "target_employees": 200
+    },
+    {
+      "index": 375,
+      "generator_index": 9,
+      "replicate": 25,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090775,
+      "target_employees": 120
+    },
+    {
+      "index": 376,
+      "generator_index": 10,
+      "replicate": 25,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090776,
+      "target_employees": 160
+    },
+    {
+      "index": 377,
+      "generator_index": 11,
+      "replicate": 25,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090777,
+      "target_employees": 200
+    },
+    {
+      "index": 378,
+      "generator_index": 9,
+      "replicate": 26,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090778,
+      "target_employees": 120
+    },
+    {
+      "index": 379,
+      "generator_index": 10,
+      "replicate": 26,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090779,
+      "target_employees": 160
+    },
+    {
+      "index": 380,
+      "generator_index": 11,
+      "replicate": 26,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090780,
+      "target_employees": 200
+    },
+    {
+      "index": 381,
+      "generator_index": 9,
+      "replicate": 27,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090781,
+      "target_employees": 120
+    },
+    {
+      "index": 382,
+      "generator_index": 10,
+      "replicate": 27,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090782,
+      "target_employees": 160
+    },
+    {
+      "index": 383,
+      "generator_index": 11,
+      "replicate": 27,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090783,
+      "target_employees": 200
+    },
+    {
+      "index": 384,
+      "generator_index": 9,
+      "replicate": 28,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090784,
+      "target_employees": 120
+    },
+    {
+      "index": 385,
+      "generator_index": 10,
+      "replicate": 28,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090785,
+      "target_employees": 160
+    },
+    {
+      "index": 386,
+      "generator_index": 11,
+      "replicate": 28,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090786,
+      "target_employees": 200
+    },
+    {
+      "index": 387,
+      "generator_index": 9,
+      "replicate": 29,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090787,
+      "target_employees": 120
+    },
+    {
+      "index": 388,
+      "generator_index": 10,
+      "replicate": 29,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090788,
+      "target_employees": 160
+    },
+    {
+      "index": 389,
+      "generator_index": 11,
+      "replicate": 29,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090789,
+      "target_employees": 200
+    },
+    {
+      "index": 390,
+      "generator_index": 9,
+      "replicate": 30,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090790,
+      "target_employees": 120
+    },
+    {
+      "index": 391,
+      "generator_index": 10,
+      "replicate": 30,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090791,
+      "target_employees": 160
+    },
+    {
+      "index": 392,
+      "generator_index": 11,
+      "replicate": 30,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090792,
+      "target_employees": 200
+    },
+    {
+      "index": 393,
+      "generator_index": 9,
+      "replicate": 31,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090793,
+      "target_employees": 120
+    },
+    {
+      "index": 394,
+      "generator_index": 10,
+      "replicate": 31,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090794,
+      "target_employees": 160
+    },
+    {
+      "index": 395,
+      "generator_index": 11,
+      "replicate": 31,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090795,
+      "target_employees": 200
+    },
+    {
+      "index": 396,
+      "generator_index": 9,
+      "replicate": 32,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090796,
+      "target_employees": 120
+    },
+    {
+      "index": 397,
+      "generator_index": 10,
+      "replicate": 32,
+      "archetype": "regulated",
+      "disclosure": "selective",
+      "seed": 4090797,
+      "target_employees": 160
+    },
+    {
+      "index": 398,
+      "generator_index": 11,
+      "replicate": 32,
+      "archetype": "regulated",
+      "disclosure": "extensive",
+      "seed": 4090798,
+      "target_employees": 200
+    },
+    {
+      "index": 399,
+      "generator_index": 9,
+      "replicate": 33,
+      "archetype": "regulated",
+      "disclosure": "low",
+      "seed": 4090799,
+      "target_employees": 120
+    },
+    {
+      "index": 400,
+      "generator_index": 13,
+      "replicate": 0,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090800,
+      "target_employees": 160
+    },
+    {
+      "index": 401,
+      "generator_index": 14,
+      "replicate": 0,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090801,
+      "target_employees": 200
+    },
+    {
+      "index": 402,
+      "generator_index": 12,
+      "replicate": 0,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090802,
+      "target_employees": 120
+    },
+    {
+      "index": 403,
+      "generator_index": 13,
+      "replicate": 1,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090803,
+      "target_employees": 160
+    },
+    {
+      "index": 404,
+      "generator_index": 14,
+      "replicate": 1,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090804,
+      "target_employees": 200
+    },
+    {
+      "index": 405,
+      "generator_index": 12,
+      "replicate": 1,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090805,
+      "target_employees": 120
+    },
+    {
+      "index": 406,
+      "generator_index": 13,
+      "replicate": 2,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090806,
+      "target_employees": 160
+    },
+    {
+      "index": 407,
+      "generator_index": 14,
+      "replicate": 2,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090807,
+      "target_employees": 200
+    },
+    {
+      "index": 408,
+      "generator_index": 12,
+      "replicate": 2,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090808,
+      "target_employees": 120
+    },
+    {
+      "index": 409,
+      "generator_index": 13,
+      "replicate": 3,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090809,
+      "target_employees": 160
+    },
+    {
+      "index": 410,
+      "generator_index": 14,
+      "replicate": 3,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090810,
+      "target_employees": 200
+    },
+    {
+      "index": 411,
+      "generator_index": 12,
+      "replicate": 3,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090811,
+      "target_employees": 120
+    },
+    {
+      "index": 412,
+      "generator_index": 13,
+      "replicate": 4,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090812,
+      "target_employees": 160
+    },
+    {
+      "index": 413,
+      "generator_index": 14,
+      "replicate": 4,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090813,
+      "target_employees": 200
+    },
+    {
+      "index": 414,
+      "generator_index": 12,
+      "replicate": 4,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090814,
+      "target_employees": 120
+    },
+    {
+      "index": 415,
+      "generator_index": 13,
+      "replicate": 5,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090815,
+      "target_employees": 160
+    },
+    {
+      "index": 416,
+      "generator_index": 14,
+      "replicate": 5,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090816,
+      "target_employees": 200
+    },
+    {
+      "index": 417,
+      "generator_index": 12,
+      "replicate": 5,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090817,
+      "target_employees": 120
+    },
+    {
+      "index": 418,
+      "generator_index": 13,
+      "replicate": 6,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090818,
+      "target_employees": 160
+    },
+    {
+      "index": 419,
+      "generator_index": 14,
+      "replicate": 6,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090819,
+      "target_employees": 200
+    },
+    {
+      "index": 420,
+      "generator_index": 12,
+      "replicate": 6,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090820,
+      "target_employees": 120
+    },
+    {
+      "index": 421,
+      "generator_index": 13,
+      "replicate": 7,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090821,
+      "target_employees": 160
+    },
+    {
+      "index": 422,
+      "generator_index": 14,
+      "replicate": 7,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090822,
+      "target_employees": 200
+    },
+    {
+      "index": 423,
+      "generator_index": 12,
+      "replicate": 7,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090823,
+      "target_employees": 120
+    },
+    {
+      "index": 424,
+      "generator_index": 13,
+      "replicate": 8,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090824,
+      "target_employees": 160
+    },
+    {
+      "index": 425,
+      "generator_index": 14,
+      "replicate": 8,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090825,
+      "target_employees": 200
+    },
+    {
+      "index": 426,
+      "generator_index": 12,
+      "replicate": 8,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090826,
+      "target_employees": 120
+    },
+    {
+      "index": 427,
+      "generator_index": 13,
+      "replicate": 9,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090827,
+      "target_employees": 160
+    },
+    {
+      "index": 428,
+      "generator_index": 14,
+      "replicate": 9,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090828,
+      "target_employees": 200
+    },
+    {
+      "index": 429,
+      "generator_index": 12,
+      "replicate": 9,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090829,
+      "target_employees": 120
+    },
+    {
+      "index": 430,
+      "generator_index": 13,
+      "replicate": 10,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090830,
+      "target_employees": 160
+    },
+    {
+      "index": 431,
+      "generator_index": 14,
+      "replicate": 10,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090831,
+      "target_employees": 200
+    },
+    {
+      "index": 432,
+      "generator_index": 12,
+      "replicate": 10,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090832,
+      "target_employees": 120
+    },
+    {
+      "index": 433,
+      "generator_index": 13,
+      "replicate": 11,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090833,
+      "target_employees": 160
+    },
+    {
+      "index": 434,
+      "generator_index": 14,
+      "replicate": 11,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090834,
+      "target_employees": 200
+    },
+    {
+      "index": 435,
+      "generator_index": 12,
+      "replicate": 11,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090835,
+      "target_employees": 120
+    },
+    {
+      "index": 436,
+      "generator_index": 13,
+      "replicate": 12,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090836,
+      "target_employees": 160
+    },
+    {
+      "index": 437,
+      "generator_index": 14,
+      "replicate": 12,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090837,
+      "target_employees": 200
+    },
+    {
+      "index": 438,
+      "generator_index": 12,
+      "replicate": 12,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090838,
+      "target_employees": 120
+    },
+    {
+      "index": 439,
+      "generator_index": 13,
+      "replicate": 13,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090839,
+      "target_employees": 160
+    },
+    {
+      "index": 440,
+      "generator_index": 14,
+      "replicate": 13,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090840,
+      "target_employees": 200
+    },
+    {
+      "index": 441,
+      "generator_index": 12,
+      "replicate": 13,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090841,
+      "target_employees": 120
+    },
+    {
+      "index": 442,
+      "generator_index": 13,
+      "replicate": 14,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090842,
+      "target_employees": 160
+    },
+    {
+      "index": 443,
+      "generator_index": 14,
+      "replicate": 14,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090843,
+      "target_employees": 200
+    },
+    {
+      "index": 444,
+      "generator_index": 12,
+      "replicate": 14,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090844,
+      "target_employees": 120
+    },
+    {
+      "index": 445,
+      "generator_index": 13,
+      "replicate": 15,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090845,
+      "target_employees": 160
+    },
+    {
+      "index": 446,
+      "generator_index": 14,
+      "replicate": 15,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090846,
+      "target_employees": 200
+    },
+    {
+      "index": 447,
+      "generator_index": 12,
+      "replicate": 15,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090847,
+      "target_employees": 120
+    },
+    {
+      "index": 448,
+      "generator_index": 13,
+      "replicate": 16,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090848,
+      "target_employees": 160
+    },
+    {
+      "index": 449,
+      "generator_index": 14,
+      "replicate": 16,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090849,
+      "target_employees": 200
+    },
+    {
+      "index": 450,
+      "generator_index": 12,
+      "replicate": 16,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090850,
+      "target_employees": 120
+    },
+    {
+      "index": 451,
+      "generator_index": 13,
+      "replicate": 17,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090851,
+      "target_employees": 160
+    },
+    {
+      "index": 452,
+      "generator_index": 14,
+      "replicate": 17,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090852,
+      "target_employees": 200
+    },
+    {
+      "index": 453,
+      "generator_index": 12,
+      "replicate": 17,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090853,
+      "target_employees": 120
+    },
+    {
+      "index": 454,
+      "generator_index": 13,
+      "replicate": 18,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090854,
+      "target_employees": 160
+    },
+    {
+      "index": 455,
+      "generator_index": 14,
+      "replicate": 18,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090855,
+      "target_employees": 200
+    },
+    {
+      "index": 456,
+      "generator_index": 12,
+      "replicate": 18,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090856,
+      "target_employees": 120
+    },
+    {
+      "index": 457,
+      "generator_index": 13,
+      "replicate": 19,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090857,
+      "target_employees": 160
+    },
+    {
+      "index": 458,
+      "generator_index": 14,
+      "replicate": 19,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090858,
+      "target_employees": 200
+    },
+    {
+      "index": 459,
+      "generator_index": 12,
+      "replicate": 19,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090859,
+      "target_employees": 120
+    },
+    {
+      "index": 460,
+      "generator_index": 13,
+      "replicate": 20,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090860,
+      "target_employees": 160
+    },
+    {
+      "index": 461,
+      "generator_index": 14,
+      "replicate": 20,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090861,
+      "target_employees": 200
+    },
+    {
+      "index": 462,
+      "generator_index": 12,
+      "replicate": 20,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090862,
+      "target_employees": 120
+    },
+    {
+      "index": 463,
+      "generator_index": 13,
+      "replicate": 21,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090863,
+      "target_employees": 160
+    },
+    {
+      "index": 464,
+      "generator_index": 14,
+      "replicate": 21,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090864,
+      "target_employees": 200
+    },
+    {
+      "index": 465,
+      "generator_index": 12,
+      "replicate": 21,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090865,
+      "target_employees": 120
+    },
+    {
+      "index": 466,
+      "generator_index": 13,
+      "replicate": 22,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090866,
+      "target_employees": 160
+    },
+    {
+      "index": 467,
+      "generator_index": 14,
+      "replicate": 22,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090867,
+      "target_employees": 200
+    },
+    {
+      "index": 468,
+      "generator_index": 12,
+      "replicate": 22,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090868,
+      "target_employees": 120
+    },
+    {
+      "index": 469,
+      "generator_index": 13,
+      "replicate": 23,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090869,
+      "target_employees": 160
+    },
+    {
+      "index": 470,
+      "generator_index": 14,
+      "replicate": 23,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090870,
+      "target_employees": 200
+    },
+    {
+      "index": 471,
+      "generator_index": 12,
+      "replicate": 23,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090871,
+      "target_employees": 120
+    },
+    {
+      "index": 472,
+      "generator_index": 13,
+      "replicate": 24,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090872,
+      "target_employees": 160
+    },
+    {
+      "index": 473,
+      "generator_index": 14,
+      "replicate": 24,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090873,
+      "target_employees": 200
+    },
+    {
+      "index": 474,
+      "generator_index": 12,
+      "replicate": 24,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090874,
+      "target_employees": 120
+    },
+    {
+      "index": 475,
+      "generator_index": 13,
+      "replicate": 25,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090875,
+      "target_employees": 160
+    },
+    {
+      "index": 476,
+      "generator_index": 14,
+      "replicate": 25,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090876,
+      "target_employees": 200
+    },
+    {
+      "index": 477,
+      "generator_index": 12,
+      "replicate": 25,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090877,
+      "target_employees": 120
+    },
+    {
+      "index": 478,
+      "generator_index": 13,
+      "replicate": 26,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090878,
+      "target_employees": 160
+    },
+    {
+      "index": 479,
+      "generator_index": 14,
+      "replicate": 26,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090879,
+      "target_employees": 200
+    },
+    {
+      "index": 480,
+      "generator_index": 12,
+      "replicate": 26,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090880,
+      "target_employees": 120
+    },
+    {
+      "index": 481,
+      "generator_index": 13,
+      "replicate": 27,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090881,
+      "target_employees": 160
+    },
+    {
+      "index": 482,
+      "generator_index": 14,
+      "replicate": 27,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090882,
+      "target_employees": 200
+    },
+    {
+      "index": 483,
+      "generator_index": 12,
+      "replicate": 27,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090883,
+      "target_employees": 120
+    },
+    {
+      "index": 484,
+      "generator_index": 13,
+      "replicate": 28,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090884,
+      "target_employees": 160
+    },
+    {
+      "index": 485,
+      "generator_index": 14,
+      "replicate": 28,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090885,
+      "target_employees": 200
+    },
+    {
+      "index": 486,
+      "generator_index": 12,
+      "replicate": 28,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090886,
+      "target_employees": 120
+    },
+    {
+      "index": 487,
+      "generator_index": 13,
+      "replicate": 29,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090887,
+      "target_employees": 160
+    },
+    {
+      "index": 488,
+      "generator_index": 14,
+      "replicate": 29,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090888,
+      "target_employees": 200
+    },
+    {
+      "index": 489,
+      "generator_index": 12,
+      "replicate": 29,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090889,
+      "target_employees": 120
+    },
+    {
+      "index": 490,
+      "generator_index": 13,
+      "replicate": 30,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090890,
+      "target_employees": 160
+    },
+    {
+      "index": 491,
+      "generator_index": 14,
+      "replicate": 30,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090891,
+      "target_employees": 200
+    },
+    {
+      "index": 492,
+      "generator_index": 12,
+      "replicate": 30,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090892,
+      "target_employees": 120
+    },
+    {
+      "index": 493,
+      "generator_index": 13,
+      "replicate": 31,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090893,
+      "target_employees": 160
+    },
+    {
+      "index": 494,
+      "generator_index": 14,
+      "replicate": 31,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090894,
+      "target_employees": 200
+    },
+    {
+      "index": 495,
+      "generator_index": 12,
+      "replicate": 31,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090895,
+      "target_employees": 120
+    },
+    {
+      "index": 496,
+      "generator_index": 13,
+      "replicate": 32,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090896,
+      "target_employees": 160
+    },
+    {
+      "index": 497,
+      "generator_index": 14,
+      "replicate": 32,
+      "archetype": "clinical",
+      "disclosure": "extensive",
+      "seed": 4090897,
+      "target_employees": 200
+    },
+    {
+      "index": 498,
+      "generator_index": 12,
+      "replicate": 32,
+      "archetype": "clinical",
+      "disclosure": "low",
+      "seed": 4090898,
+      "target_employees": 120
+    },
+    {
+      "index": 499,
+      "generator_index": 13,
+      "replicate": 33,
+      "archetype": "clinical",
+      "disclosure": "selective",
+      "seed": 4090899,
+      "target_employees": 160
+    }
+  ],
+  "company_count": 500,
+  "seed_range": [
+    4090400,
+    4090899
+  ],
+  "allocation": "100 per archetype; regime=(within_archetype_ordinal+archetype_ordinal)%3; foundation cell=3*archetype_ordinal+regime; same size conditional on regime as frozen development",
+  "frozen_generator_config": "experiments/product_recovery_v1/config.json",
+  "frozen_inference": "experiments/product_recovery_v1/inference",
+  "minimum_visible_contacts": 100,
+  "undersized_action": "retain all predetermined companies; no resampling or exclusions; report failed minimum criterion if encountered",
+  "resource_stop": "retain partial data and progress log; report completed count; no altered protocol/seeds or partial cohort masquerading as500",
+  "execution": "facts then public projection/publication then truth; source-only inference once on paired clean/messy; cited evidence and all predictions freeze before separate evaluator; no post-outcome changes",
+  "metrics": "same frozen evaluator and 2000 company-bootstrap replicates seed4062502; all-visible coverage/abstention; precision on selected complete-truth edges; unknown separated; visible-manager conditional recall; all-absent errors; co-manager partial/full failures; structural validity and archetype/regime counts",
+  "extra_intervals": [
+    "precision",
+    "coverage",
+    "abstention",
+    "candidate_recall",
+    "wrong_manager_rate",
+    "all_managers_absent_false_assignment_rate"
+  ],
+  "product_audit": "source-only per-company compressed SQLite size/load benchmark only; no app integration, no label leakage into runtime, no confidence fabrication, distinguish proposals from approved publication",
+  "publication": "not calibrated, not production approved; assess original M0 gaps; no threshold or policy changes",
+  "preservation": "all earlier data/source/results, v1, staged submission and deployment checkout unchanged",
+  "full_scale_partitions": "one operational scale-up cohort; no fresh independent validation/calibration/final claims; prior30-company validation remains separate",
+  "frozen_m0_requirements": "docs/v4/m0/EVALUATION_PROTOCOL.json",
+  "notes": [
+    "five archetypes100 each; disclosure totals low167/selective167/extensive166",
+    "size/disclosure confounding retained; not causal group effect",
+    "company-scoped source family IDs form global key(company_id,family_id)",
+    "all source publisher probabilities and templates unchanged"
+  ]
+}

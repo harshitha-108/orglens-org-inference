@@ -1,0 +1,109 @@
+{
+  "version": "orglens-v4-m24-history.1",
+  "facts_version": "orglens-v4-organisation-facts.2",
+  "source_version": "orglens-v4-source-observable.1",
+  "protocol": "orglens-v4-eval-m0.1",
+  "seed": 4062201,
+  "as_of": "2026-11-02T00:00:00Z",
+  "valid_from": "2026-07-01T00:00:00Z",
+  "domain_review": "provisional; not independent validation",
+  "synthetic_only": true,
+  "example_archetypes": [
+    "product",
+    "regional_services",
+    "multi_site",
+    "regulated",
+    "clinical"
+  ],
+  "disclosure_weights": [
+    0.4,
+    0.45,
+    0.15
+  ],
+  "channel_probabilities": {
+    "biography": [
+      0.15,
+      0.55,
+      0.8
+    ],
+    "team_directory": [
+      0.05,
+      0.35,
+      0.7
+    ],
+    "unit_page": [
+      0.15,
+      0.6,
+      0.85
+    ],
+    "responsibility_statement": [
+      0.03,
+      0.25,
+      0.6
+    ],
+    "appointment_announcement": [
+      0.1,
+      0.4,
+      0.7
+    ]
+  },
+  "coverage_beta": [
+    2,
+    3
+  ],
+  "explicit_duties_probability": 0.5,
+  "document_omission_probability": 0.15,
+  "wording_probability": 0.25,
+  "lag_days": [
+    0,
+    30,
+    120,
+    365
+  ],
+  "lag_weights": [
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "syndication_probability": 0.15,
+  "conflict_probability": 0.08,
+  "visibility_probability": 0.85,
+  "visibility_company_factor": [
+    0.9,
+    1.1
+  ],
+  "sparsity_beta": [
+    2,
+    6
+  ],
+  "company_missingness_factor": [
+    0.8,
+    1.2
+  ],
+  "missingness_weights": {
+    "title": 0.4,
+    "department": 0.8,
+    "responsibilities": 1.4
+  },
+  "partial_scope_probability": 0.15,
+  "wrong_department_probability": 0.04,
+  "title_variation_probability": 0.3,
+  "title_style_probabilities": [
+    0.5,
+    0.25,
+    0.25
+  ],
+  "uncommon_title_probability": 0.1,
+  "uncertain_link_probability": 0.1,
+  "head_span_limit": 60,
+  "manager_span_limit": 10,
+  "central_units": 4,
+  "example_partition": "development-only; semantic fixtures are not evaluation",
+  "rng_compatibility_version": "orglens-v4-m22-config.1",
+  "projection_version": "temporal-public-facts.3",
+  "mention_extractor_version": "observable-person-mentions.2",
+  "history_existence_from": "2024-10-01T00:00:00Z",
+  "occupancy_effective_from": "2024-10-15T00:00:00Z",
+  "ledger_recorded_at": "2026-08-01T00:00:00Z"
+}

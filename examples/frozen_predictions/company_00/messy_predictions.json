@@ -1,0 +1,2085 @@
+[
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "d223ef54f8f00da461b263cd3ecc88d3",
+    "employee_name": "Sam Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Lin Morgan",
+        "manager_id": "ae3c06579037a0a3665832e7084d0f62",
+        "ranking_score": null,
+        "claim_ids": [
+          "20f33fd0befbeb765b27fd14",
+          "e1ec3f6adc2ef48904ee38b9"
+        ],
+        "reasons": [
+          "unspecified_subset"
+        ]
+      },
+      {
+        "manager_name": "Owen Chen",
+        "manager_id": null,
+        "ranking_score": null,
+        "claim_ids": [
+          "4825abb3e158db8fa8f31a7e",
+          "e1ec3f6adc2ef48904ee38b9"
+        ],
+        "reasons": [
+          "manager_contact_unresolved",
+          "unspecified_subset"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "individual_allocation_not_established",
+      "multiple_plausible_named_managers",
+      "named_manager_not_resolved_to_visible_contact"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "af7b9cec77a5ab5eb99e7baaf04db693",
+    "employee_name": "Felix Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "44b2ef426b466e3addee50a3a6ec28f2",
+    "employee_name": "Finn Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "0d54b1843a4df1694390084bb0858610",
+    "employee_name": "Iris Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "d1e2c9585a9be0529402c5103b0c35e9",
+    "employee_name": "Noah Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "48e1f40e67c7ef173e480db0ad207a86",
+    "employee_name": "Noah Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "c1102ea3fdc2b3fb21ac21c21dc8ce5b",
+    "employee_name": "Amir Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "1f731bad56fe5d822d633db4e52dec86",
+    "employee_name": "Hugo Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "abc6ef4b58e21aedea45b8648b5881a1",
+    "employee_name": "Ethan Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ee78d2ce8d34bc5b0540db7a1e25e9e3",
+    "employee_name": "Zoe Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "838eb267b5bfe760297bdc21c4ba9f47",
+    "employee_name": "Leila Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "6860dcb16a783b2758940bfba3df77b2",
+    "employee_name": "Theo Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "0900cc58e67df9f7ef285869fe2da09b",
+    "employee_name": "Owen Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "17651cf13bc444219c80c07ff133d755",
+    "employee_name": "Ethan Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "2c55fbce447767f1651703d794680c28",
+    "employee_name": "Esme Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Mila Hughes",
+        "manager_id": null,
+        "ranking_score": null,
+        "claim_ids": [
+          "cbb828a29bace5913a2c4337",
+          "e67139c8ce098cf961d73e30"
+        ],
+        "reasons": [
+          "manager_contact_unresolved"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "multiple_or_conflicting_team_affiliations",
+      "named_manager_not_resolved_to_visible_contact"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "82f687236ac8c324e100f726d935cc2b",
+    "employee_name": "Ada Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "59a223286e097dfe99efd6e194a77309",
+    "employee_name": "Isaac Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "40f0e5f40ba9cb30780c186d9c327e5e",
+    "employee_name": "Mira Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "6f29c3b523e89d8e159846367e3e995a",
+    "employee_name": "Freya Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "bf518fbe9149ef351a7c686232549a25",
+    "employee_name": "Zoe Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "3e532082a032341117f75f4de5fcdfd8",
+    "employee_name": "Esme Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ac7f02c0f30f99e1b4a554b3ab3a1b52",
+    "employee_name": "Ruby Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "d49b8c2f2eaff359fc705dbd89018460",
+    "employee_name": "Bo Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "18ff387468d3ad005a6e6a59520f1ebd",
+    "employee_name": "Ada Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "f6c786f62c7d2e7743294434ca235ef3",
+    "employee_name": "Adam Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "1823c8aa0eb17781eab1fb310bec2abc",
+    "employee_name": "Jasper Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "2d839686c2e583ccfe39d76e18af43e0",
+    "employee_name": "Oscar Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ea0afd238a26da58fcd67d84e9cca5b3",
+    "employee_name": "Bo Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Casey Nolan",
+        "manager_id": null,
+        "ranking_score": null,
+        "claim_ids": [
+          "4ea4e798d0d72d84fe561b80",
+          "d94d3083209ce19ee12aad02"
+        ],
+        "reasons": [
+          "date_unknown",
+          "ended",
+          "event_only",
+          "manager_contact_unresolved"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "membership_stale_undated_or_ambiguous",
+      "named_manager_not_resolved_to_visible_contact"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "4a06d8a7ad80d36e77f03ffa394475fb",
+    "employee_name": "Theo Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "dbde5f4bb5b4cd599e6e444c090cd855",
+    "employee_name": "Esme Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "a0f2ed9460c851f317869187a02f1e6d",
+    "employee_name": "Isaac Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "2bb16fbf7339fff98dbcf64fadc65543",
+    "employee_name": "Lin Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Casey Nolan",
+        "manager_id": null,
+        "ranking_score": null,
+        "claim_ids": [
+          "4e60edb2f3e9184e274806ff",
+          "4ea4e798d0d72d84fe561b80"
+        ],
+        "reasons": [
+          "date_unknown",
+          "ended",
+          "event_only",
+          "manager_contact_unresolved"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "membership_stale_undated_or_ambiguous",
+      "named_manager_not_resolved_to_visible_contact"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "2afbcb019ab670eee33b39e48e7d3b13",
+    "employee_name": "Nora Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "0e77c60c6f7b3a4ec8c354971e6c2bfe",
+    "employee_name": "Nora Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "12a04f3134e73012aec31662533fa00e",
+    "employee_name": "Uma Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "908c088e79afd92686143c042276f939",
+    "employee_name": "Oscar Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "e0a233f879e41ab23f458303c189929c",
+    "employee_name": "Vera Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "0e76486effe37d88b2847cb25cf827b0",
+    "employee_name": "Felix Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "8ba7d7835e9eca096f271c61544198e0",
+    "employee_name": "Ethan Wells",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "1b658e7039373c715077b4b20798a6ca",
+    "employee_name": "Theo Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "725d8e84c7e6485016893111ada87275",
+    "employee_name": "Cia Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Casey Nolan",
+        "manager_id": null,
+        "ranking_score": null,
+        "claim_ids": [
+          "4ea4e798d0d72d84fe561b80",
+          "8c749fa373a8ee283448eac7"
+        ],
+        "reasons": [
+          "ended",
+          "event_only",
+          "manager_contact_unresolved"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "named_manager_not_resolved_to_visible_contact"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "7ab4581c875ad1fac3a6a576ff399d4d",
+    "employee_name": "Uma Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "d2e645d8aa93b3f9b13dfdf2afcec0ae",
+    "employee_name": "Hugo Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "7a28b06910e2fad53b92ecbab2c78813",
+    "employee_name": "Owen Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "3c25a5e11305aaaa9c0e6a9941a3ac34",
+    "employee_name": "Oscar Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "9e957e401428d267130c4f8cb1f10516",
+    "employee_name": "Lena Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "dafb8b2a8b1a5ea592245eb2c301b2be",
+    "employee_name": "Iris Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "bb5816ac2b67891ffeae114a9caa20df",
+    "employee_name": "Iris Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "e1bfc3ded331587e3e2128b514ea03bc",
+    "employee_name": "Esme Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "95e714edc1cebab1c7404c599c1dab62",
+    "employee_name": "Sam Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ec889bd6f4a5ac1d5eb41604c66ded2f",
+    "employee_name": "Mila Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "8b08f17c778a8c250180e29f41af7a04",
+    "employee_name": "Leila Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "4761fd2b1024f5aac64f23464370ea5b",
+    "employee_name": "Oscar Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "2d9a6aae062611aa3c8c9216b065b5bf",
+    "employee_name": "Zoe Wells",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "33f5bc5fd0980f15f511de65d6040644",
+    "employee_name": "Zoe Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ca08bf008237419f4e2a1d9295877c1f",
+    "employee_name": "Felix Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "6389bdced95feecc150e0395fc352ab7",
+    "employee_name": "Freya Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "3513205c39cbaff4708a2e2ce5010be2",
+    "employee_name": "Elena Brooks",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "3d9fe161847fd9cbb8cbf68fdc6f8922",
+    "employee_name": "Sam Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "939893d34a48d74c2583eb1bcf7a22fb",
+    "employee_name": "Adam Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "53e48d78279e5e1507f31bf22d65d8e7",
+    "employee_name": "Nikhil Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "bc6a127c39518e821e6f164984a8a558",
+    "employee_name": "Vera Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "multiple_or_conflicting_team_affiliations",
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "8a3a33e50a25e67c34514ed57ec4a48f",
+    "employee_name": "Amir Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "5bf0f7ab619e585f89442d0d53405938",
+    "employee_name": "Lena Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "a12931533505a74ef4081c432fe6c5d1",
+    "employee_name": "Vera Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "4bcd6c3882c2ee28b9941e42d7f5ba68",
+    "employee_name": "Nikhil Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "5e1a48667f39cb2d8ef1f09d723b4037",
+    "employee_name": "Ruby Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "d1c9b05e562d76d244cfa67a47923906",
+    "employee_name": "Hugo Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "0867d8682e59e52ee9c6e8337bf0c0ba",
+    "employee_name": "Mira Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "47ef91e0aaac3fc538fc3e1cde2e54c9",
+    "employee_name": "Lena Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "80571485a7d35518854a7ea52892e34d",
+    "employee_name": "Cia Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "e9b1a545002e9dff5d526005985430c5",
+    "employee_name": "Iris Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ce76895b68fdd35c43edf869e8c1390e",
+    "employee_name": "Amir Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "a87ec50fd0c6bdb815e33804f13e4585",
+    "employee_name": "Mila Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "c4ccc4c7ce9a11b7f4f8b0f927be2961",
+    "employee_name": "Ruby Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "5b22e1cc410816b8e98c57e26c574ebb",
+    "employee_name": "Isaac Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ae3c06579037a0a3665832e7084d0f62",
+    "employee_name": "Lin Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "bda9fcbe7eee4680444256a8ba5b1824",
+    "employee_name": "Uma Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "689204b624ae36ee456587e38c998200",
+    "employee_name": "Bo Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "85d7071c2daed5474444125e1bc7ae52",
+    "employee_name": "Lin Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "84f0d3a00580594e3474c600e6b7083d",
+    "employee_name": "Priya Morgan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "55e6d14fcf7c37695c2df353f3642a8f",
+    "employee_name": "Freya Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "dcabfd0a0e61d5aabe3b70662085f8b8",
+    "employee_name": "Adam Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "d2c5414fddeedf6436075b89e3b0baaf",
+    "employee_name": "Ethan Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "9944d617020cced351bbdd933325619e",
+    "employee_name": "Leila Singh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "fa87979a1da4e9f3a89c5643390f0117",
+    "employee_name": "Clara Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "b1f6f0eadc51f142ada98d17fe521090",
+    "employee_name": "Theo Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "774b0b5b1e0ca1be74f6cd2ba6c65ad4",
+    "employee_name": "Hugo Wells",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "33392810bcaf8367ca2a89d622a881c6",
+    "employee_name": "Clara Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "6d1d47e915b7f5307f56d41f24e5ab41",
+    "employee_name": "Ruby Hughes",
+    "status": "proposed",
+    "manager_id": "939893d34a48d74c2583eb1bcf7a22fb",
+    "manager_name": "Adam Hughes",
+    "candidates": [
+      {
+        "manager_name": "Adam Hughes",
+        "manager_id": "939893d34a48d74c2583eb1bcf7a22fb",
+        "ranking_score": null,
+        "claim_ids": [
+          "4fc6e127ddb4ff5e63dc6fd6",
+          "607d8d170b3ec9cd86fb59b9"
+        ],
+        "reasons": []
+      }
+    ],
+    "reasons": [],
+    "evidence_claim_ids": [
+      "4fc6e127ddb4ff5e63dc6fd6",
+      "607d8d170b3ec9cd86fb59b9"
+    ],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "61ddefff54df28944f2a2ce01b44f073",
+    "employee_name": "Nora Wells",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "973fd89c76b2d88f05654180fedf2b01",
+    "employee_name": "Nora Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "dd495c51c947f6d8f3be952b87fa4e26",
+    "employee_name": "Adam Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "9189db8b14566f6a6ce49864d430aa4a",
+    "employee_name": "Clara Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "35af710240d1767a59d1b1f66152a55c",
+    "employee_name": "Nikhil Morgan",
+    "status": "proposed",
+    "manager_id": "3513205c39cbaff4708a2e2ce5010be2",
+    "manager_name": "Elena Brooks",
+    "candidates": [
+      {
+        "manager_name": "Elena Brooks",
+        "manager_id": "3513205c39cbaff4708a2e2ce5010be2",
+        "ranking_score": null,
+        "claim_ids": [
+          "7ce1dc6c6331ff2f201f737b",
+          "e3b6d388e7ebfb69910bc33b"
+        ],
+        "reasons": []
+      }
+    ],
+    "reasons": [],
+    "evidence_claim_ids": [
+      "7ce1dc6c6331ff2f201f737b",
+      "e3b6d388e7ebfb69910bc33b"
+    ],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "f4b665c617864da00966c84f8a6672be",
+    "employee_name": "Hugo Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "f1f629ab444e65bedafbf21197c1d836",
+    "employee_name": "Zoe Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "5c753eea36a3289aeea5c945f128f3c4",
+    "employee_name": "Felix Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "63a9d9e2e94ba76cb60276070edd21b3",
+    "employee_name": "Noah Chen",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Lin Morgan",
+        "manager_id": "ae3c06579037a0a3665832e7084d0f62",
+        "ranking_score": null,
+        "claim_ids": [
+          "20f33fd0befbeb765b27fd14",
+          "c3aa17ec4852798311c380ac"
+        ],
+        "reasons": [
+          "unspecified_subset"
+        ]
+      },
+      {
+        "manager_name": "Owen Chen",
+        "manager_id": null,
+        "ranking_score": null,
+        "claim_ids": [
+          "4825abb3e158db8fa8f31a7e",
+          "c3aa17ec4852798311c380ac"
+        ],
+        "reasons": [
+          "manager_contact_unresolved",
+          "unspecified_subset"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "individual_allocation_not_established",
+      "multiple_plausible_named_managers",
+      "named_manager_not_resolved_to_visible_contact"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "7dbce870f72a6e895de240708cb32266",
+    "employee_name": "Lena Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "db2a55e2959755a40a3f04ba1d286d37",
+    "employee_name": "Mila Bennett",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "93d0d8b7fe9f5fca35c1dca6bcfe41f7",
+    "employee_name": "Jasper Grant",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "54ecf01435eb2365d9b2b2881e5d8762",
+    "employee_name": "Amir Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "9fef75a1dbcdf063ea6c6bb84c60278c",
+    "employee_name": "Clara Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "20189e8a4bca2fe1c5eed08104f4cf6f",
+    "employee_name": "Jasper Walsh",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "57b2fd6cc48430db61922bc3c11850ba",
+    "employee_name": "Ethan Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "89e837f03641c4ca7fd98f13e278d3a9",
+    "employee_name": "Vera Hughes",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [
+      {
+        "manager_name": "Adam Hughes",
+        "manager_id": "939893d34a48d74c2583eb1bcf7a22fb",
+        "ranking_score": null,
+        "claim_ids": [
+          "4fc6e127ddb4ff5e63dc6fd6",
+          "87fb7aacfd6353440a9fd0cd"
+        ],
+        "reasons": [
+          "date_unknown"
+        ]
+      }
+    ],
+    "reasons": [
+      "accountability_or_pair_evidence_insufficient",
+      "membership_stale_undated_or_ambiguous"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  },
+  {
+    "pipeline_version": "orglens-v4-m25c.1",
+    "company_id": "a02c12ed8bacd85f45d11d72d1c2ef4d",
+    "snapshot_id": "2026-11-02T00:00:00Z",
+    "employee_id": "ef6e23680dec85bff666ecc209530ed6",
+    "employee_name": "Riley Khan",
+    "status": "unresolved",
+    "manager_id": null,
+    "manager_name": null,
+    "candidates": [],
+    "reasons": [
+      "no_matching_people_accountability",
+      "no_substantive_membership_evidence"
+    ],
+    "evidence_claim_ids": [],
+    "ranking_score": null,
+    "calibrated_estimate": null
+  }
+]

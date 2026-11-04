@@ -1,0 +1,49 @@
+{
+  "version": "orglens-product-recovery.1",
+  "as_of": "2026-11-02T00:00:00Z",
+  "development_seed": 4070400,
+  "reserved_validation_seed": 4080400,
+  "company_count": 15,
+  "archetypes": [
+    "product",
+    "regional_services",
+    "multi_site",
+    "regulated",
+    "clinical"
+  ],
+  "regimes": [
+    "low",
+    "selective",
+    "extensive"
+  ],
+  "target_employees": [
+    120,
+    160,
+    200
+  ],
+  "visible_probability": 0.92,
+  "biography_probability": {
+    "low": 0.35,
+    "selective": 0.78,
+    "extensive": 0.93
+  },
+  "duties_probability": {
+    "low": 0.3,
+    "selective": 0.78,
+    "extensive": 0.95
+  },
+  "directory_probability": 0.6,
+  "nonpeople_probability": 0.7,
+  "history_probability": 0.45,
+  "alias_probability": 0.18,
+  "messy_document_omission": 0.12,
+  "messy_provider_conflict": 0.05,
+  "messy_missing_title": 0.15,
+  "wording_novel_probability": 0.12,
+  "company_gate_precision": 0.9,
+  "development_gate_coverage": 0.1,
+  "development_gate_min_edges": 50,
+  "development_gate_min_companies": 8,
+  "maximum_absent_false_assignment_rate": 0.05,
+  "note": "Explicit synthetic scenario assumptions; not observed real-world frequencies. Pilot gate does not replace M0 final support/calibration requirements."
+}

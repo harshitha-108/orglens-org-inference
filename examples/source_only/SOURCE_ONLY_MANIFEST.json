@@ -1,0 +1,8 @@
+{
+  "scope": "One existing source-only scale-up example; not an evaluation cohort",
+  "files_sha256": {
+    "company_00/clean.json": "f500a6f585d5a02f8e84e456e785182d1bbb2f197b90b1305780f7db9330cfbe",
+    "company_00/contacts.json": "dfb5af8040edfb34ec9f5c3168b09fa7fb8e6dea498d078458c5eecd65f1a514",
+    "company_00/messy.json": "1053a47e5a1ce4c0b2c33d318e45841e24742f2435c22694d0e0a22e88b2a4d3"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "scope": "Authoritative frozen recovery dependency closure and seed/evaluation contracts; relative portable paths",
+  "files": {
+    "docs/v4/m0/EVALUATION_PROTOCOL.json": {
+      "bytes": 2501,
+      "sha256": "479c2fb1c555535a09f7314f31d7d2add2a3b77fe5709f6b137ae8dce97fae48",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/config.json": {
+      "bytes": 1290,
+      "sha256": "d7eb39df5fa966bebd73d12280381b0a1048fa6e12b0c1efe965722e2cf33e9d",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/foundation.py": {
+      "bytes": 5998,
+      "sha256": "f3daa5f0567c512fbcbfff4b2cc4ee7331aa3e185a9216671a64a10c84d56536",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/generate.py": {
+      "bytes": 2971,
+      "sha256": "42ebc12b955bb0d56b71420858cf8abe39549236d2f9dfa079dc40dd14c47ba5",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/config.json": {
+      "bytes": 227,
+      "sha256": "502e4fc43d721316108d2fa6d4633ae5381c0dbd1e6aaaf10573b6c451677eda",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/contracts.py": {
+      "bytes": 1394,
+      "sha256": "061d1249060cc1ab52289560201fcb58190ab7b12c9f5b44be449396e44de093",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/evaluate.py": {
+      "bytes": 8593,
+      "sha256": "b623f6d750738a72f0052a62f36776a2e39b8d681b4b0dfa709fbcb51ff0d1f7",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/extract.py": {
+      "bytes": 12172,
+      "sha256": "71dd4b83023e29f67d9eb13aefaa371d92922588d3c81326788faa7d4790ec83",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/predict.py": {
+      "bytes": 5811,
+      "sha256": "d431ad51b96995290e728c22b381c811bfabac378c5ba01994baf177f49a5cd5",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/inference/run_predict.py": {
+      "bytes": 2862,
+      "sha256": "cdf4d88cb572e3456e55a636fbf7c2a36d3cf6664b22b3a902399ea352f25e8b",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1/publication.py": {
+      "bytes": 7049,
+      "sha256": "fc97ea340a78f9a8cd5ecbeba7e8984225c83ecfe8326de1652296ebf513038e",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_scale500/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_scale500/audit_scale.py": {
+      "bytes": 4369,
+      "sha256": "d4301b850e2077b69e94d33dbf4884f19ed1519ba59237745036ba71a10033a8",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_scale500/PROTOCOL.json": {
+      "bytes": 107664,
+      "sha256": "574b27cb20a66bda3e7f02c6c85b0f852c99eda83f37cba602141516b30e3151",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_scale500/run_scale.py": {
+      "bytes": 5841,
+      "sha256": "5a3ece54a507b08815fd389a771e5888c7b6488cf2c6985520ceb45f3d856bad",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_scale500/runtime_audit.py": {
+      "bytes": 4851,
+      "sha256": "15aa1aed5950a7ec33a0538620e73e11b7cabb7376164721365be7aa2d29d13f",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_validation/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_validation/audit_validation.py": {
+      "bytes": 5169,
+      "sha256": "6c6c3c2b8a8270e93d85d6cd1a0123279ca1bbc8baa32a556b5d21bbe4088829",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_validation/PROTOCOL.json": {
+      "bytes": 9140,
+      "sha256": "d3573dcf4243e894e4d350e0820c8d48ba751000c84a92d57b60514ecaabfeb8",
+      "scientific_freeze_verified": true
+    },
+    "experiments/product_recovery_v1_validation/run_validation.py": {
+      "bytes": 4572,
+      "sha256": "59cd52bdc160b8eefc4c70bff88a3b07cb168e483a371cef6c875415fe8457a4",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m22_sources/__init__.py": {
+      "bytes": 78,
+      "sha256": "79d0697e2160985e0803334c2bea6aa2d6e170319a0b9973f6cae0012d72ca9d",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m22_sources/common.py": {
+      "bytes": 795,
+      "sha256": "273f1c5e6aa12a1d6ad1dc2dd6910e3e3f75a4a6b4b942d8f0fb0de4e892f08e",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m22_sources/config.json": {
+      "bytes": 1455,
+      "sha256": "82f18bb2c08abf5762740382b51fcfaadc6eabfb6d90c214cfea1bdabad45afb",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m22_sources/foundation.py": {
+      "bytes": 13267,
+      "sha256": "ae768941c8411afa0041d33d932ad75ec5cb69b645fd6ffa17afe4e8839dc4e6",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m24_history/__init__.py": {
+      "bytes": 74,
+      "sha256": "f20cd2f4ddce5ab8f2a1d7264d23ced98c426d51712d3e732a3f0667e69f0a95",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m24_history/common.py": {
+      "bytes": 499,
+      "sha256": "fb85e116d8c4756c587c6e86d8243f6d12ef42f441ed346fa1af57724ef5586e",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m24_history/config.json": {
+      "bytes": 2377,
+      "sha256": "1051ee6ff64c6e37c4ee3da5b54d46b75dc66191e6346039590d550aff04f1b0",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m24_history/foundation.py": {
+      "bytes": 7046,
+      "sha256": "2f961be13eb58f416ecbc07440e510715c0c0bd5a3929d6dc3a809d49fd91770",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m25a/__init__.py": {
+      "bytes": 83,
+      "sha256": "92202e501cf936b8799b6b24d6e7fa1cf57e62008704c65c6074c1466938d121",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m25a/common.py": {
+      "bytes": 499,
+      "sha256": "fb85e116d8c4756c587c6e86d8243f6d12ef42f441ed346fa1af57724ef5586e",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m25a/config.json": {
+      "bytes": 3044,
+      "sha256": "f169aabf2503af585054192834c02145be69228a4513cba549901f601231dc51",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m25a/foundation.py": {
+      "bytes": 13118,
+      "sha256": "f791586d7896d7baee36e8f095f074cfcc01b985b093ad3e853297f54745c229",
+      "scientific_freeze_verified": true
+    },
+    "experiments/v4_m25a/projection.py": {
+      "bytes": 4557,
+      "sha256": "e7a34f48ce9d7fce9b8bb8b3e99c1d21dc0217b4b0dfddda35cf788c2d06d1c0",
+      "scientific_freeze_verified": true
+    }
+  }
+}

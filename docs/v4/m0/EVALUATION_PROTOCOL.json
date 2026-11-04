@@ -1,0 +1,93 @@
+{
+  "protocol_version": "orglens-v4-eval-m0.1",
+  "status": "frozen proposal pending M0 approval; no execution authorised",
+  "primary_relation": "direct_people_management",
+  "as_of": "2026-11-02T00:00:00Z",
+  "proposed_full_corpus": {
+    "companies": 500,
+    "splits": {
+      "build": 175,
+      "development": 75,
+      "calibration": 100,
+      "policy_validation": 75,
+      "final_test": 75
+    },
+    "root_seed": 4061102,
+    "generation_authorised": false
+  },
+  "pilot": {
+    "companies": 20,
+    "root_seed": 4061101,
+    "all_development_only": true,
+    "generation_authorised": false
+  },
+  "bootstrap": {
+    "unit": "company",
+    "replicates": 2000,
+    "seed": 4061109,
+    "interval": "two-sided percentile 95%; lower endpoint 0.025"
+  },
+  "retrieval": {
+    "k": 20,
+    "minimum_any_true_manager_recall": 0.95,
+    "population": "nonroots with at least one true direct manager visible"
+  },
+  "publication_gates": {
+    "precision": 0.9,
+    "minimum_company_bootstrap_lower_precision": 0.9,
+    "minimum_employee_coverage_all_observed": 0.15,
+    "minimum_published_edges": 500,
+    "minimum_publishing_companies": 30,
+    "structural_violations": 0
+  },
+  "policy_threshold_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    0.975,
+    0.99
+  ],
+  "calibration_gate": {
+    "fixed_probability_bin_edges": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "maximum_weighted_absolute_bin_error": 0.05,
+    "minimum_calibration_cohort_proposals": 100,
+    "minimum_calibration_cohort_companies": 10
+  },
+  "stress": {
+    "manager_removal_fractions": [
+      0.1,
+      0.3
+    ],
+    "removal_seed": 4061110,
+    "maximum_false_assignment_rate_on_affected_employees_at_30_percent": 0.05,
+    "requires_observation_unchanged_truth": true
+  },
+  "external_initial_target": {
+    "employees": 100,
+    "independent_companies": 20,
+    "annotators": 2,
+    "adjudication_required": true,
+    "representative_accuracy_claim_authorised": false
+  },
+  "notes": [
+    "Not an implemented generator configuration. Distribution and RNG specifications must be approved before generation.",
+    "Any outcome-informed amendment creates a new protocol; consumed data stays exploratory.",
+    "Final pipeline/model/calibrator/policy artifact hashes require a later pre-test freeze."
+  ]
+}

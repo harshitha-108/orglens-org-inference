@@ -1,0 +1,9 @@
+{
+  "version": "orglens-v4-m25c.1",
+  "max_source_age_days": 180,
+  "bootstrap_seed": 4062502,
+  "bootstrap_replicates": 2000,
+  "max_proposals_per_employee": 1,
+  "calibration": null,
+  "publication_enabled": false
+}
