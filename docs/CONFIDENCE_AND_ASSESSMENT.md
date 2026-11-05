@@ -18,6 +18,14 @@
 
 The frozen proposal stays intact. The local profile rates its cited observable records by checking dated, unflagged employee membership and manager duty claims for the named contacts, excluding uncorroborated provider records and counting document families rather than copies. Separate families are required for a usable pair. A recorded alternative or weaker candidate evidence takes precedence over extra corroboration. A third family distinguishes corroborated from supported evidence. Missing support yields limited evidence. Unresolved employees receive no rating. Distinct document families do not prove independent reporting in the real world.
 
+### Reporting-line confidence (evidence-based)
+
+- **Corroborated.** Dated, usable team and manager-duty records come from at least three source families, with no recorded candidate concerns.
+- **Supported.** Two separate source families provide dated, usable team and manager-duty records, with no recorded candidate concerns.
+- **Supported with caveats.** A usable pair from separate source families supports the suggestion, but the saved candidate records include a reason flag or another possible manager. This label takes precedence over additional corroboration.
+
+These ratings describe the strength of the available evidence. They are not calibrated probabilities or independently confirmed reporting relationships.
+
 The fixed evidence-rating code had SHA-256 892e4eeabdb6d73bb214d6c7914feefc22ebcdd2a7250eaa980a2555352eb0c8 before the retrospective audit. Ratings were computed before the separate evaluation step opened the saved synthetic truth.
 
 | Evidence rating | Focused runtime proposals | Coverage of 74,501 | Existing 30-company focused validation correct / wrong | Same companies, older baseline correct / wrong |
