@@ -5,6 +5,7 @@ import csv
 import io
 import streamlit as st
 import adapter
+from confidence import evidence_strength
 from streamlit.components.v1 import declare_component
 from chart_layout import chart_payload
 
@@ -102,7 +103,7 @@ if nav=="Focused Recovery":
     st.write(f'{v["correct"]:,} correct · {v["wrong"]:,} wrong · {v["unknown_selected"]:,} unscorable · {v["unresolved"]:,} unresolved. Structural violations: {v["structural_violations"]}.')
     st.write(f'{v["correct_two_hop"]:,} employees have a correct two-edge reporting chain, out of {v["available_two_hop_employees"]:,} with a scorable visible chain available.')
     st.caption(f'Precision: {v["correct"]:,} of {v["correct"]+v["wrong"]:,} scored proposals. Coverage uses all visible employees. Recall counts employees whose true manager is visible.')
-    st.info("These results are synthetic. Observed precision does not guarantee real-world performance. OrgLens leaves managers unresolved when evidence is insufficient. Individual confidence is unavailable. Sources support suggestions, not independently confirmed reporting lines. Confirmed lines: 0.")
+    st.info("These results are synthetic. Observed precision does not guarantee real-world performance. OrgLens leaves managers unresolved when evidence is insufficient. Each proposal shows an evidence rating. Calibrated individual probabilities are unavailable. Sources support suggestions, not independently confirmed reporting lines. Confirmed lines: 0.")
     st.subheader("Independent validation · same 30 fresh companies")
     paired=metrics("focused_validation_metrics.json")
     st.table([{"Arm":label,"Precision":f'{m["precision"]:.2%}',"Coverage":f'{m["coverage"]:.2%}',"Candidate recall":f'{m["full_pool_recall"]:.2%}',"Correct two-edge chains":m["correct_two_hop"]} for label,key in [("Baseline","baseline"),("Focused","focused")] for m in [paired[key]["views"]["messy"]]])
@@ -222,6 +223,13 @@ with detail:
         else:
             st.markdown("**Manager unresolved — insufficient evidence**")
         claims=adapter.evidence(data,pred["evidence_claim_ids"])
+        rating=evidence_strength(pred,claims)
+        if rating:
+            label, explanation=rating
+            st.markdown(f"**Evidence strength · {label}**")
+            st.caption(explanation)
+            st.caption("This describes the source records. It is not a probability that the suggestion is correct.")
+
         member=next((c for c,_ in claims if c["kind"]=="membership"),None)
         duty=next((c for c,_ in claims if c["kind"]=="people_accountability"),None)
         if manager and member and duty:
