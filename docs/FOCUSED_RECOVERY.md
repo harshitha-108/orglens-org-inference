@@ -1,6 +1,8 @@
 # Focused recovery: evidence and evaluation
 
-The original recovery cohort remains selectable. Focused recovery uses a fresh synthetic cohort and adds independently sampled staff-register and line-management statements derived from organisational facts established before selecting parents. Substantive and leadership-team membership are matched separately. A provider listing alone cannot support a proposal. Competing, incomplete and stale evidence can still cause abstention.
+Explore Organisations displays the current focused recovery cohort. Earlier results remain available for comparison in Model Performance and in the repository's [historical scale-up results](../evidence/scale_metrics.json) and [historical validation results](../evidence/validation_metrics.json). The earlier cohort cannot be selected in Explore Organisations.
+
+Focused recovery uses a separate synthetic cohort and adds independently sampled staff-register and line-management statements derived from organisational facts established before selecting parents. Substantive and leadership-team membership are matched separately. A provider listing alone cannot support a proposal. Competing, incomplete and stale evidence can still cause abstention.
 
 A proposal is not a published or independently confirmed reporting line. Individual correctness probabilities are unavailable. Precision counts correct proposals among scorable proposals; coverage counts proposals across all visible employees. Candidate recall measures retrieval where a true manager is visible. A correct two-edge chain requires both consecutive proposals to match scorable synthetic truth.
 
@@ -8,7 +10,7 @@ The paired development and independent synthetic validation cohorts contained 15
 
 ## Reproduction
 
-From the assessment root, use Python with the repository development requirements installed. The following entry points were run on the internal assessment workspace. Do not overwrite an existing frozen run. The staged publication candidate contains the focused code and safe aggregates, not the private generated evaluation artifacts. Complete end-to-end replay from a public-only clone has not been tested.
+From the repository root, use Python with the repository development requirements installed. The following entry points were run in the internal assessment workspace. Use a fresh output location for any replay. The public repository includes focused source code and aggregate results. Complete end-to-end replay from a public-only clone has not been tested.
 
 ```text
 python -B -m experiments.product_recovery_v1.focused_improvement.experiment run development

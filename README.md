@@ -1,92 +1,82 @@
-# OrgLens · focused recovery candidate
+# OrgLens
 
-The focused recovery build in this checkout uses the existing evidence-based workflow and a fresh, fixed 500-company synthetic cohort. The app keeps the earlier frozen baseline selectable; both cohorts use their own matching runtime and metrics. The previously published deployment is unchanged until approval.
+[Open the live Streamlit demo](https://orglens-demo.streamlit.app/) · [Firmable assessment brief](docs/ASSESSMENT_BRIEF.md)
 
-Focused scale-up: **74,501 visible employees**, **16,129 proposals**, **100.00% scored precision**, **21.65% coverage**, **49.54% visible-manager candidate recall**. These results are synthetic. There are no calibrated individual probabilities or confirmed reporting lines.
+OrgLens suggests direct managers from messy synthetic employee records and organisational documents. Pick a company to explore its partial reporting chart, search for an employee and inspect the cited evidence. OrgLens leaves a manager unresolved when the records are insufficient or ambiguous. Every displayed line is an unconfirmed proposal.
 
-See [Focused recovery: evaluation and reproduction](docs/FOCUSED_RECOVERY.md). The original baseline documentation below is retained for reference.
+## Run locally
 
-# OrgLens · evidence-based experimental recovery
-
-OrgLens turns flat, messy employee records and synthetic organisational documents into a **partial graph of possible direct managers**. Every proposal is unverified and has source-linked evidence. Where evidence is insufficient, the system abstains. The app does not establish real reporting relationships or purchasing authority.
-
-Existing experimental app: https://orglens-recovery-experimental-bvn4yjeusj4tg67e6zekyv.streamlit.app/ . This publication package is a **reviewed local candidate** and includes an approved-for-review UI polish that is not yet deployed. Original v1 remains a separate historical system at https://github.com/harshitha-108/orglens . It cannot reproduce these recovery results.
-
-## Measured results
-
-| Frozen messy-source scale-up | Result |
-|---|---:|
-| Synthetic companies / visible employees |500 /74,612|
-| Experimental proposals |9,004|
-| Correct / wrong / unscorable |8,641 /360 /3|
-| Precision on9,001 scored proposals |96.00%|
-| All-visible employee coverage |12.07%|
-| Candidate recall, a true manager visible |31.92%|
-| Companies with proposals |466|
-| Structural violations |0|
-| Published / externally confirmed relationships |0 /0|
-
-The separate prior30-company, company-disjoint synthetic validation had4,483visible employees,517correct/23wrong proposals,95.74%precision and12.05%coverage. The500-company run is scale-up under a frozen synthetic distribution, **not another independent holdout**. Neither proves real-world accuracy. Individual confidence probabilities are unavailable; pooled precision must not be assigned to an employee.
-
-## How it works and key decisions
-
-1. Establish teams, roles, staffing, histories and people-management responsibility before selecting direct-reporting truth.
-2. Project committed facts to public publication facts. Publish imperfect biographies, directories, responsibility pages and historical announcements without reading selected reporting edges. Visibility and observation noise have separate random streams.
-3. Extract observable claims with exact source spans, dates and copy-family provenance. The conservative M2.5C source-only baseline combines team membership and named people-accountability, or abstains. Its candidate sets are unranked and scores remain null.
-4. Freeze predictions before a separate evaluator opens synthetic truth. Unknown truth is not silently scored negative. All employees and wrong/unscorable proposals remain in the runtime.
-
-The recovery improvement is associated with richer synthetic evidence/distribution, not a demonstrated new inference algorithm. The unchanged M2.5B reference produced the same development outcomes. Do not claim that ranking or production calibration was improved.
-
-## Source map
-
-- `experiments/product_recovery_v1/{foundation,publication}.py`: authoritative recovery generation/publication; `config.json` is the frozen noise/disclosure/size configuration.
-- `experiments/product_recovery_v1/inference/`: exact frozen extractor, predictor, source-input contracts, isolated prediction runner and evaluator, copied unchanged from recovery's M2.5C baseline.
-- `experiments/v4_m25a/`, `v4_m24_history/`, `v4_m22_sources/`: **active transitive dependencies** of recovery facts/temporal validation/public projection/RNGs. Only required modules/configs are included; these are not the historical v1 engine or unrelated experiment outputs.
-- `experiments/product_recovery_v1_scale500/` and `product_recovery_v1_validation/`: original orchestration/audit source and exact predeclared seed protocols. Their historical `main()` paths require unpublished prior freeze assets; they are provided for traceability, not represented as standalone turnkey commands.
-- `tools/reproduce.py`: new portable orchestration, importing frozen functions unchanged. See the tested/not-tested distinction below.
-- `SOURCE_MANIFEST.json`: relative-path sizes and SHA256 hashes of35 authoritative source/config/contract files, checked against available scientific freezes.
-- `evidence/`: byte-identical frozen aggregate scale-up and validation metrics. `examples/`: one fixed observable-only company and its six frozen scientific prediction outputs. No per-employee correctness labels, private facts or saved true edges are distributed.
-- `app.py`, `adapter.py`, `runtime/`: Streamlit presentation and the exact source-only frozen SQLite. The app does not import the generator/evaluator or regenerate data.
-- `docs/EVALUATION_METHODOLOGY.md`: denominators, versioning, limitations and audit caveats. `docs/ASSESSMENT_BRIEF.md` is the original task.
-
-## Setup and tested commands
-
-Use Python3.13. From this package root:
+Use Python 3.13. From the repository root, create and activate a virtual environment, then install the runtime dependencies and start Streamlit.
 
 ```sh
 python -m venv .venv
 # Activate .venv using your platform's normal command.
-python -m pip install -r requirements-dev.txt
-python tools/reproduce.py verify
-python tools/reproduce.py plan --cohort scale500
-python tools/reproduce.py plan --cohort validation30
-python tools/reproduce.py infer-example --out _reproduction/example
-python -m pytest tests/test_publication_package.py -p no:cacheprovider -q
+python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Actually tested in this preparation task: source verification, both fixed cohort plans, the existing-company source-only replay and the three package tests. The replay produced six scientific JSON outputs equal to the frozen example, with an enforced truth-read boundary; path-bearing access logs are not distributed. The eight existing exhaustive application/data/citation tests also passed in the UI staging workspace. The app uses existing dependency pins; an entirely fresh dependency installation was not repeated here. Package-local import/startup smoke checks are recorded in the review report. The runtime/metric hashes remain unchanged.
+The app reads the bundled [focused runtime](runtime/recovery_focused.sqlite). Dataset generation and evaluation run separately.
 
-The example replay is a regression check, not a new performance experiment. Output folders must not already exist. No dataset was regenerated in this preparation task.
+## Repository guide
 
-### Full fixed-cohort workflow — provided, NOT executed in this exported package
+| Path | Where to look |
+|---|---|
+| [`app.py`](app.py), [`adapter.py`](adapter.py), [`chart_layout.py`](chart_layout.py), [`chart_component/`](chart_component/) | Streamlit pages, read-only SQLite access, chart layout and chart interactions. |
+| [`experiments/product_recovery_v1/`](experiments/product_recovery_v1/) | Dataset generation, observation and publication. The base generator is in [`foundation.py`](experiments/product_recovery_v1/foundation.py), with size, disclosure and noise settings in [`config.json`](experiments/product_recovery_v1/config.json). See the experiment guide below for the active inference path. |
+| [`confidence.py`](confidence.py) | Relationship evidence ratings, calculated from cited source records. |
+| [`evidence/`](evidence/), [`runtime/`](runtime/) | Frozen evaluation metrics and SQLite datasets. The [focused release manifest](evidence/focused_release.json) ties the active runtime and metrics to their SHA-256 hashes. |
+| [`tests/`](tests/), [`tools/reproduce.py`](tools/reproduce.py), [`examples/`](examples/) | Regression tests, source verification, cohort plans and a source-only example with expected outputs. |
+| [`docs/`](docs/), [`SOURCE_MANIFEST.json`](SOURCE_MANIFEST.json) | Assessment, methodology, limitations and hashes for the 35 source and configuration files covered by the original publication check. |
+
+### Experiment directories
+
+- [`product_recovery_v1/focused_improvement/`](experiments/product_recovery_v1/focused_improvement/) contains the current focused release's added source publication, claim extraction, direct-manager inference and evaluation runner.
+- [`product_recovery_v1/inference/`](experiments/product_recovery_v1/inference/) contains the earlier source-only baseline, shared input contracts and evaluator. The focused runner uses that evaluator and runs the baseline arm for paired comparisons.
+- [`product_recovery_v1_scale500/`](experiments/product_recovery_v1_scale500/) and [`product_recovery_v1_validation/`](experiments/product_recovery_v1_validation/) contain the earlier recovery cohort protocols, orchestration and audit code. They support historical comparisons and the portable reproduction tool.
+- [`v4_m22_sources/`](experiments/v4_m22_sources/), [`v4_m24_history/`](experiments/v4_m24_history/) and [`v4_m25a/`](experiments/v4_m25a/) supply shared generator code for organisational facts, historical validation and source projection. Their versioned paths are used by imports and freeze checks.
+
+## How it works
+
+1. Generate teams, roles, staffing history and management duties before assigning hidden reporting lines.
+2. Publish synthetic records from organisational facts, with separate randomness for contact visibility and observation noise. The focused release adds dated staff registers and distinguishes leadership-team membership from other team membership.
+3. Extract team membership and people-management claims with exact text spans, dates and source families. Suggest a manager only when compatible records support the relationship. A provider listing or a senior title alone cannot establish a reporting line.
+4. Freeze proposals before evaluating against hidden synthetic truth. Unknown truth is excluded from scored precision and included in coverage.
+
+The three ratings describe evidence quality. **Corroborated** uses at least three eligible source families with no recorded candidate concern. **Supported** uses two separate eligible families with no recorded candidate concern. **Supported with caveats** has a usable pair plus a recorded concern or alternative. Unresolved employees receive no rating. These categories provide no calibrated individual probability or independent confirmation. See [the rating definitions and limitations](docs/CONFIDENCE_AND_ASSESSMENT.md).
+
+## Current release and historical comparisons
+
+The live app serves the **focused 500-company cohort**. Model Performance displays earlier results for comparison alongside the active release.
+
+| Focused synthetic scale-up | Result |
+|---|---:|
+| Companies / visible employees | 500 / 74,501 |
+| Proposed reporting lines | 16,129 |
+| Scored precision | 100.00% (16,129 / 16,129 scored) |
+| Employee coverage | 21.65% (16,129 / 74,501) |
+| Candidate recall among employees with a visible true manager | 49.54% (33,838 / 68,302) |
+| Correct two-link chains | 2,838 |
+| Employees without a proposal | 58,372 |
+
+The [focused scale-up results](evidence/focused_scale_metrics.json) and [paired 30-company validation](evidence/focused_validation_metrics.json) are distinct synthetic evaluations. The [earlier scale-up](evidence/scale_metrics.json) used a different 500-company cohort with 74,612 visible employees, 9,004 proposals and 96.00% scored precision. The [earlier validation](evidence/validation_metrics.json) and [historical methodology](docs/EVALUATION_METHODOLOGY.md) belong to that earlier workflow.
+
+Observed synthetic precision does not establish real-world accuracy or purchasing authority. Coverage is limited by missing, stale and ambiguous evidence, and shared management can remain unresolved.
+
+## Tests and reproduction
 
 ```sh
-python tools/reproduce.py generate --cohort scale500 --out _reproduction/scale500
-python tools/reproduce.py predict --run _reproduction/scale500
-python tools/reproduce.py evaluate --run _reproduction/scale500
+python -m pip install -r requirements-dev.txt
+python tools/reproduce.py verify
+python -m pytest tests -p no:cacheprovider -q
+python tools/reproduce.py plan --cohort scale500
+python tools/reproduce.py plan --cohort validation30
+python tools/reproduce.py infer-example --out _reproduction/example
 ```
 
-For the fixed30-company cohort, substitute `validation30` and a fresh `_reproduction/validation30` folder.500seeds are4090400–4090899;30validation seeds4080400–4080429. These are reproductions of consumed cohorts, never fresh validation. No seed replacement/resampling/tuning is allowed. The wrapper writes newly generated truth only below ignored `_reproduction/`, runs the predictor as a separate source-only process, then invokes the frozen evaluator separately.
+Source verification and all 12 tracked tests passed in the existing environment. The earlier cohort plans were checked, and the earlier source-only example replay matched six frozen JSON outputs without hidden truth. Use a new output folder for that replay.
 
-**Do not claim that this portable full workflow, cloud regeneration or byte-identical SQLite reconstruction has been tested.** The original full runs were completed in the protected research workspace; the new exported orchestration has only import/plan/example verification here. Full outputs may differ in formatting across platforms; example scientific comparison uses parsed JSON. The historical runtime builder is supplied unchanged but its research paths are not a portable app-regeneration command. The app intentionally serves the supplied immutable runtime.
+The `generate`, `predict` and `evaluate` commands in [`tools/reproduce.py`](tools/reproduce.py) target the earlier cohorts. For the focused experiment, see [the focused run and score commands](docs/FOCUSED_RECOVERY.md#reproduction). Those commands were exercised in the internal workspace. Full end-to-end reproduction and SQLite reconstruction from a clean public clone remain unverified. Keep generated truth in local output directories.
 
-## Limitations and publication safety
+[`PUBLICATION_MANIFEST.json`](PUBLICATION_MANIFEST.json) is the historical review-package snapshot. Use the focused release manifest to verify current runtime and evaluation files. The older `runtime/recovery.sqlite` remains the default for adapter calls that omit the database path, so retain it.
 
-Missing evidence leaves65,608employees without a proposal. Low-disclosure precision is88.31%. All360scored errors cite misleading provider affiliations.30co-management cases have wrong proposals and co-manager recovery is not solved. Source independence, disclosure rates and realism are modelling assumptions. Internal retrieval95%, coverage15%, calibration and targeted manager-removal requirements remain unmet. A structurally valid graph can still be wrong.
-
-No existing evaluation truth, personal correctness verdicts, credentials, environment files, test XML, caches or review archives belong in publication. Do not upload `_reproduction/`; `.gitignore` adds defensive exclusions. `.gitattributes` preserves exact source bytes for freeze verification. Inspect the explicit publication manifest before committing. Review reports, dependency audit folders and historical corpora remain outside this package.
-
-## AI-assisted development
-
-Codex assisted implementation, debugging, tests, packaging and documentation. Frozen hashes, source-only boundaries, exact citations and company-disjoint evaluation support engineering review; AI assistance and engineering tests are not independent domain or real-world validation. Negative historical findings and current error patterns are acknowledged rather than replaced with favourable results.
+Codex assisted implementation, debugging, testing, packaging and documentation.
