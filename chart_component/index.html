@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}body{margin:0;font:14px system-ui;color:#172b46}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:9px;background:#eef3f8;border-radius:10px 10px 0 0}button{background:white;border:1px solid #a8b9cc;border-radius:6px;color:#172b46;padding:6px 10px;cursor:pointer}button:focus-visible,.node:focus-visible{outline:3px solid #167a92}#status{font-size:12px}svg{width:100%;height:480px;display:block;background:#f7faff;touch-action:none;cursor:grab;border:1px solid #dce5ee;border-radius:0 0 10px 10px}.group-frame{fill:#edf3fa;stroke:#c6d5e4;stroke-width:1;pointer-events:none}.hypothetical .group-frame{fill:#fff6e7;stroke:#d6b482}.hypothetical .group-label{fill:#75491c}.hypothetical .selected .card{fill:#fff1d5;stroke:#a9611d}.group-label{font:600 12px system-ui;fill:#415976;pointer-events:none}.node{cursor:pointer}.card{fill:white;stroke:#a4b7ca;stroke-width:1.5}.manager .card{fill:#e7f0fd;stroke:#41638a}.selected .card{stroke:#087f86;stroke-width:3;fill:#e4f7f4}.parent .card{stroke:#2b5cb1;stroke-width:3}.edge{stroke:#5e7896;stroke-width:2;stroke-dasharray:6 4;fill:none}.edge.active{stroke:#087f86;stroke-width:3}.name{font-weight:650;font-size:14px;fill:#152b47}.title{font-size:12px;fill:#425a74}@media(max-width:500px){svg{height:390px}}
+</style>
+<div class="toolbar"><button id="plus" aria-label="Zoom in">+</button><button id="minus" aria-label="Zoom out">−</button><button id="fit">Fit to screen</button><span id="status" aria-live="polite"></span></div>
+<svg aria-label="Interactive suggested reporting chart" tabindex="0"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#5e7896"/></marker></defs><g id="world"></g></svg>
+<script>
+"use strict";
+const svg=document.querySelector('svg'), world=document.querySelector('#world'), ns='http://www.w3.org/2000/svg';
+let payload, company, selection, nodes=new Map(), scale=1,x=0,y=0, drag=null, fitted=true, origin=null, pending=null, focusRevision;
+function send(type,fields={}){parent.postMessage({isStreamlitMessage:true,type,...fields},origin||'*');}
+function tag(name,attrs,parentNode){const e=document.createElementNS(ns,name);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));parentNode.append(e);return e;}
+function draw(){world.setAttribute('transform','translate('+x+' '+y+') scale('+scale+')');svg.dataset.zoom=String(scale);document.querySelector('#status').textContent=Math.round(scale*100)+'% · Drag to pan';}
+function size(){return svg.getBoundingClientRect();}
+function fit(){if(!payload)return;const b=size();scale=Math.min(1.15,b.width/payload.width,b.height/payload.height)*.96;x=(b.width-payload.width*scale)/2;y=Math.min(22,(b.height-payload.height*scale)/2);fitted=true;draw();}
+function zoom(f,cx=size().width/2,cy=size().height/2){let s=Math.max(.06,Math.min(3,scale*f));x=cx-(cx-x)*s/scale;y=cy-(cy-y)*s/scale;scale=s;fitted=false;draw();}
+function focus(id){const n=nodes.get(id);if(!n)return;const b=size();scale=Math.max(scale,.8);x=b.width/2-(n.x+90)*scale;y=b.height/2-(n.y+35)*scale;fitted=false;draw();}
+function highlight(id){selection=id;const p=payload.edges.find(e=>e[1]===id)?.[0];world.querySelectorAll('.node').forEach(el=>{el.classList.toggle('selected',el.dataset.id===id);el.classList.toggle('parent',el.dataset.id===p);el.setAttribute('aria-pressed',String(el.dataset.id===id));});world.querySelectorAll('.edge').forEach(el=>el.classList.toggle('active',el.dataset.employee===id));}
+function pick(id){highlight(id);pending=crypto.randomUUID();send('streamlit:setComponentValue',{value:{id,event:pending},dataType:'json'});}
+function render(){world.replaceChildren();svg.classList.toggle("hypothetical",Boolean(payload.hypothetical));nodes=new Map(payload.nodes.map(n=>[n.id,n]));const managers=new Set(payload.edges.map(e=>e[0]));
+ for(const g of payload.groups){tag('rect',{class:'group-frame',x:g.x,y:g.y,width:g.width,height:g.height,rx:12},world);tag('text',{class:'group-label',x:g.x+14,y:g.y+24},world).textContent=g.label;}
+ for(const [m,e] of payload.edges){const a=nodes.get(m),b=nodes.get(e);const p=tag('path',{class:'edge',d:`M${a.x+90},${a.y+70} C${a.x+90},${a.y+91} ${b.x+90},${b.y-21} ${b.x+90},${b.y}`,'marker-end':'url(#arrow)'},world);p.dataset.employee=e;}
+ for(const n of payload.nodes){const g=tag('g',{class:'node'+(managers.has(n.id)?' manager':''),transform:`translate(${n.x} ${n.y})`,role:'button',tabindex:'0','aria-label':n.name+' — '+n.title},world);g.dataset.id=n.id;tag('rect',{class:'card',width:180,height:70,rx:9},g);tag('title',{},g).textContent=n.name+' — '+n.title;for(const [value,cls,yy,limit] of [[n.name,'name',26,22],[n.title,'title',48,26]])tag('text',{class:cls,x:10,y:yy},g).textContent=value.length>limit?value.slice(0,limit-1)+'…':value;g.addEventListener('click',()=>pick(n.id));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(n.id);}});}
+}
+addEventListener('message',e=>{if(e.source!==parent||e.data?.type!=='streamlit:render')return;origin=e.origin;const a=e.data.args;const changed=company!==a.company;payload=a.payload;if(changed){company=a.company;pending=null;render();fit();if(payload.hypothetical)focus(a.selected);focusRevision=a.focus_revision;}highlight(a.selected);if(focusRevision!==a.focus_revision){focusRevision=a.focus_revision;focus(a.selected);}send('streamlit:setFrameHeight',{height:Math.ceil(document.body.getBoundingClientRect().height)});});
+document.querySelector('#plus').onclick=()=>zoom(1.22);document.querySelector('#minus').onclick=()=>zoom(1/1.22);document.querySelector('#fit').onclick=fit;
+svg.addEventListener('wheel',e=>{if(!e.ctrlKey&&!e.metaKey)return;e.preventDefault();const b=size();zoom(Math.exp(-e.deltaY*.004),e.clientX-b.left,e.clientY-b.top);},{passive:false});
+svg.addEventListener('pointerdown',e=>{if(e.target.closest('.node')||e.button!==0)return;drag=[e.clientX-x,e.clientY-y];svg.setPointerCapture(e.pointerId);});
+svg.addEventListener('pointermove',e=>{if(!drag)return;x=e.clientX-drag[0];y=e.clientY-drag[1];fitted=false;draw();});for(const ev of ['pointerup','pointercancel','lostpointercapture'])svg.addEventListener(ev,()=>drag=null);
+svg.addEventListener('keydown',e=>{if(e.target!==svg)return;const d={ArrowLeft:[30,0],ArrowRight:[-30,0],ArrowUp:[0,30],ArrowDown:[0,-30]}[e.key];if(d){e.preventDefault();x+=d[0];y+=d[1];fitted=false;draw();}});
+new ResizeObserver(()=>{if(fitted)fit();send('streamlit:setFrameHeight',{height:Math.ceil(document.body.getBoundingClientRect().height)});}).observe(document.body);
+send('streamlit:componentReady',{apiVersion:1});
+</script></html>

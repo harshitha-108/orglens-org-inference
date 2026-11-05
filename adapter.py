@@ -8,12 +8,12 @@ ROOT = Path(__file__).resolve().parent
 DB = ROOT / 'runtime/recovery.sqlite'
 SCHEMA_VERSION = 'recovery-experimental-app.1'
 
-def catalogue():
-    with sqlite3.connect(DB.as_uri() + '?mode=ro', uri=True) as db:
+def catalogue(db_path=DB):
+    with sqlite3.connect(Path(db_path).resolve().as_uri() + '?mode=ro', uri=True) as db:
         return db.execute('SELECT company_id,case_name,contacts FROM companies ORDER BY case_name').fetchall()
 
-def load_company(company_id):
-    with sqlite3.connect(DB.as_uri() + '?mode=ro', uri=True) as db:
+def load_company(company_id,db_path=DB):
+    with sqlite3.connect(Path(db_path).resolve().as_uri() + '?mode=ro', uri=True) as db:
         row = db.execute('SELECT payload FROM rosters WHERE company_id=?', (company_id,)).fetchone()
     if row is None:
         raise KeyError(company_id)
@@ -42,10 +42,11 @@ def search_contacts(company, query='', status='All employees'):
                  states[p['employee_id']] == ('experimental_proposal' if status == 'With proposals' else 'no_proposal'))]
 
 REASONS = {
+    "uncorroborated_provider": "A provider listing alone cannot support a proposed manager.",
     'no_matching_people_accountability': 'No matching people-management responsibility was found.',
-    'no_substantive_membership_evidence': 'The sources do not establish this employee’s team membership.',
+    'no_substantive_membership_evidence': 'The sources do not establish this employeeâ€™s team membership.',
     'accountability_or_pair_evidence_insufficient': 'The available evidence does not establish a direct reporting relationship.',
-    'individual_allocation_not_established': 'Responsibility is shared; this employee’s individual manager is not established.',
+    'individual_allocation_not_established': 'Responsibility is shared; this employeeâ€™s individual manager is not established.',
     'multiple_plausible_named_managers': 'Several named managers remain plausible.',
     'named_manager_not_resolved_to_visible_contact': 'A named manager cannot be matched to a visible contact.',
 }

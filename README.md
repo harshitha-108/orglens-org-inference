@@ -1,3 +1,11 @@
+# OrgLens · focused recovery candidate
+
+The focused recovery build in this checkout uses the existing evidence-based workflow and a fresh, fixed 500-company synthetic cohort. The app keeps the earlier frozen baseline selectable; both cohorts use their own matching runtime and metrics. The previously published deployment is unchanged until approval.
+
+Focused scale-up: **74,501 visible employees**, **16,129 proposals**, **100.00% scored precision**, **21.65% coverage**, **49.54% visible-manager candidate recall**. These results are synthetic. There are no calibrated individual probabilities or confirmed reporting lines.
+
+See [Focused recovery: evaluation and reproduction](docs/FOCUSED_RECOVERY.md). The original baseline documentation below is retained for reference.
+
 # OrgLens · evidence-based experimental recovery
 
 OrgLens turns flat, messy employee records and synthetic organisational documents into a **partial graph of possible direct managers**. Every proposal is unverified and has source-linked evidence. Where evidence is insufficient, the system abstains. The app does not establish real reporting relationships or purchasing authority.

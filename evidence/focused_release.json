@@ -1,0 +1,25 @@
+{
+  "cohort": "focused-4120400",
+  "stats": {
+    "companies": 500,
+    "employees": 74501,
+    "proposals": 16129,
+    "confirmed": 0
+  },
+  "files_sha256": {
+    "runtime/recovery_focused.sqlite": "68baa2dc05c4fba4ff3e65f5f469e6fd216a60387f19fb11620fbaad0aeb6f8a",
+    "evidence/focused_scale_metrics.json": "4b4accf0d6fd87cb5181a1ae038cb783a3eb327446d890aac5df9b7c377d64be",
+    "evidence/focused_validation_metrics.json": "33de1e2c50f641bf3e52e0029b3e2c7893e892c84147e1a89436c9c370af26d9"
+  },
+  "source_sha256": {
+    "experiments/product_recovery_v1/focused_improvement/config.json": "ea42e3887b91caee989128f7c14f61f3272e8aa48373c00d5ce4eb3153b060a0",
+    "experiments/product_recovery_v1/focused_improvement/experiment.py": "6a920098de335cc5b16d4dee6e4ad2f57c8e3243173c1c6c361356c00699ff46",
+    "experiments/product_recovery_v1/focused_improvement/extract.py": "72685881a6d7ec62f104d29ff872b28b7db1afc80cc62c3d38ffe4bb42c58767",
+    "experiments/product_recovery_v1/focused_improvement/predict.py": "70c3a9a274e4b96979c69c12ede46a9b50643b783420708dae3b9650c3077a85",
+    "experiments/product_recovery_v1/focused_improvement/publication.py": "72a8bb5810e9a5a0fdafb9b182d1bde016b7b1fc835e22702c9a958851477296",
+    "experiments/product_recovery_v1/focused_improvement/run_predict.py": "cdf4d88cb572e3456e55a636fbf7c2a36d3cf6664b22b3a902399ea352f25e8b"
+  },
+  "heldout_validation_gate_pass": true,
+  "scale_gate_pass": true,
+  "no_private_truth": true
+}

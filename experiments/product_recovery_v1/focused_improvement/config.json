@@ -1,0 +1,14 @@
+{
+  "version": "orglens-recovery-focused.1",
+  "max_source_age_days": 180,
+  "bootstrap_seed": 4062502,
+  "bootstrap_replicates": 2000,
+  "calibration": null,
+  "publication_enabled": false,
+  "membership_supplement": {"low": 0.35, "selective": 0.50, "extensive": 0.60},
+  "duty_supplement": {"low": 0.25, "selective": 0.45, "extensive": 0.55},
+  "development_seed": 4100400,
+  "validation_seed": 4110400,
+  "scale_seed": 4120400,
+  "gate": {"minimum_precision": 0.95, "minimum_precision_interval_lower": 0.90, "minimum_coverage": 0.15, "minimum_paired_coverage_gain": 0.03, "minimum_paired_recall_gain": 0.05, "minimum_correct_two_hop": 10, "maximum_absent_false_assignment_rate": 0.05}
+}
