@@ -4,7 +4,7 @@ import hashlib
 import streamlit as st
 import adapter
 from streamlit.components.v1 import declare_component
-from chart_layout import chart_payload, role_payload
+from chart_layout import chart_payload
 
 company_chart = declare_component("recovery_company_chart", path=str(adapter.ROOT / "chart_component"))
 
@@ -27,6 +27,10 @@ div[data-testid="stMetricLabel"] p{white-space:normal}
 .st-key-reporting_workspace [data-testid="stVerticalBlock"],.st-key-employee_profile [data-testid="stVerticalBlock"]{gap:.65rem}
 .st-key-employee_profile [data-testid="stText"]{white-space:pre-wrap;overflow-wrap:anywhere}
 @media(max-width:720px){.explore-hero{padding:12px 15px}.explore-hero h1{font-size:1.4rem}}
+.st-key-company_summary [data-testid="stMetric"],.st-key-company_picker{height:114px;min-height:114px;background:#f0f6fa;border:1px solid #dce7ef;border-radius:12px;padding:12px;box-sizing:border-box}
+.st-key-company_summary [data-testid="stMetricLabel"],.st-key-company_picker label{min-height:2.4rem;display:flex;align-items:flex-start;margin:0}
+.st-key-company_summary [data-testid="stMetricValue"]{font-size:1.65rem}
+@media(max-width:720px){.st-key-company_summary [data-testid="stHorizontalBlock"]{flex-wrap:wrap}.st-key-company_summary [data-testid="stColumn"]{min-width:100%!important}.st-key-company_summary [data-testid="stMetric"],.st-key-company_picker{height:auto;min-height:78px}.st-key-company_summary [data-testid="stMetricLabel"],.st-key-company_picker label{min-height:0}}
 </style>""", unsafe_allow_html=True)
 st.sidebar.header("OrgLens")
 st.sidebar.caption("COMPANY INTELLIGENCE")
@@ -64,17 +68,11 @@ def checked_focused_release():
         assert hashlib.sha256((adapter.ROOT/rel).read_bytes()).hexdigest()==expected
     return release
 
-has_focused=(adapter.ROOT/"evidence/focused_release.json").is_file()
-cohort=st.sidebar.radio("Data cohort",["Focused recovery","Frozen baseline"],key="cohort") if has_focused else "Frozen baseline"
-focused=cohort=="Focused recovery"
-if focused:
-    release=checked_focused_release()
-    db_path=adapter.ROOT/"runtime/recovery_focused.sqlite"
-else:
-    db_path=adapter.DB
+release=checked_focused_release()
+db_path=adapter.ROOT/"runtime/recovery_focused.sqlite"
 if nav=="Explore Organisations":
-    st.caption("Cohort: "+cohort+" · synthetic data · unverified reporting proposals")
-
+    st.caption("Synthetic companies · unverified reporting proposals")
+ 
 def source_panel(data,claim_ids,expanded=False):
     for claim,doc in adapter.evidence(data,claim_ids):
         kind=doc["document_kind"].replace("_"," ").title()
@@ -90,7 +88,7 @@ def source_panel(data,claim_ids,expanded=False):
                 st.caption('Provenance: synthetic source. Copy-family identifiers are scoped to this company; independence is a modelling assumption.')
                 st.text(doc["text"])
 
-if nav=="Model Performance" and focused:
+if nav=="Model Performance":
     st.header("Focused recovery · fresh 500-company scale-up")
     st.write("These frozen synthetic results match the selected runtime. The previous scale-up is a different cohort, not a paired comparison.")
     full=metrics("focused_scale_metrics.json");v=full["views"]["messy"];stats=release["stats"]
@@ -116,38 +114,6 @@ if nav=="Model Performance" and focused:
         st.download_button("Download paired validation metrics",(adapter.ROOT/"evidence/focused_validation_metrics.json").read_bytes(),"focused_validation_metrics.json")
     st.stop()
 
-if nav=="Model Performance":
-    st.header("What the system gets right—and where it stops")
-    st.write("Frozen evaluation of the messy-source, 500-company synthetic scale-up. These are dataset-level measurements, not confidence in an individual manager.")
-    m=metrics("scale_metrics.json");v=m["views"]["messy"]
-    a,b,c=st.columns(3)
-    a.metric("Precision · selected, scored proposals",f'{v["precision"]:.2%}')
-    b.metric("Coverage · all visible employees",f'{v["coverage"]:.2%}')
-    c.metric("Candidate recall · manager visible",f'{v["full_pool_recall"]:.2%}')
-    a.caption("Of the proposals we can score, how many match synthetic truth?")
-    b.caption("For how many employees did the system make any proposal?")
-    c.caption("How often did the candidate pool contain a correct visible manager?")
-    st.caption("OrgLens deliberately leaves some employees without a suggested manager when the available evidence is insufficient.")
-    st.write("**500 companies · 74,612 employees · 9,004 proposals · 466 companies with proposals**")
-    st.write("8,641 correct · 360 wrong · 3 unscorable. Precision uses 9,001 scored proposals. Coverage includes all 9,004. Structural violations: 0.")
-    st.info("Individual confidence: unavailable. There are no calibrated probabilities for these proposals. Published or independently confirmed relationships: 0.")
-    st.subheader("Separate independent synthetic validation")
-    independent=metrics("validation_metrics.json")["views"]["messy"]
-    with st.container(border=True):
-        st.write("**30 fresh, company-disjoint companies · evaluated before the 500-company scale-up**")
-        st.write(f'{independent["employees"]:,} visible employees · {independent["correct"]} correct and {independent["wrong"]} wrong proposals · {independent["precision"]:.2%} precision · {independent["coverage"]:.2%} coverage.')
-        st.caption("This is the independent synthetic validation. The 500-company scale-up is not another holdout, and neither establishes real-company accuracy.")
-    with st.expander("Limitations that matter"):
-        st.write("• Low-disclosure precision is 88.31%; less public information makes inference harder.\n• All 360 scored errors cite misleading provider affiliations. A citation can be wrong.\n• Co-management is not solved: 30 co-managed cases receive wrong proposals.\n• Missing evidence limits recall and coverage. Abstention is deliberate, but does not guarantee that every selected edge is correct.")
-        st.write("Original internal publication gates remain unmet: 95% retrieval, 15% coverage, calibration and targeted manager-removal testing. Suggestions must remain experimental.")
-    with st.expander("Evaluation details & frozen results"):
-        interval=m["bootstrap"]["messy"]["precision_interval95"]
-        st.write(f'Company-cluster 95% precision interval: {interval[0]:.2%}–{interval[1]:.2%}. Unknown truth is excluded from correctness, not from coverage. No errors were removed from this app.')
-        st.caption("The original evaluator retains an inherited 15-company scope sentence. The verified scale-up file contains 500 company records; its totals and hash match the authoritative scale-up freeze.")
-        st.download_button("Download 500-company results",(adapter.ROOT/"evidence/scale_metrics.json").read_bytes(),"scale500_metrics.json")
-        st.download_button("Download separate 30-company validation",(adapter.ROOT/"evidence/validation_metrics.json").read_bytes(),"validation30_metrics.json")
-    st.stop()
-
 if nav=="How It Works":
     st.header("Evidence first. A reporting line only when supported.")
     st.write("The app reads frozen source-only predictions. It does not generate new predictions while you browse.")
@@ -167,8 +133,7 @@ if nav=="How It Works":
         st.subheader("What makes the work inspectable?")
         st.write("Every selected proposal has exact quotes, document IDs, dates and copy-family provenance. Fixed seeds and frozen code, inputs and predictions make the synthetic evaluation reproducible. The runtime contains no hidden manager labels or per-person correctness verdicts.")
         st.write("Source independence and company realism are modelling assumptions, not external validation. Inferred reporting paths do not prove purchasing authority.")
-    if focused:
-        st.write("Focused recovery adds dated staff registers derived from pre-reporting facts. Leadership-team duties are matched only to leadership-team membership; provider affiliations cannot independently justify a proposal.")
+    st.write("Focused recovery adds dated staff registers derived from pre-reporting facts. Leadership-team duties are matched only to leadership-team membership; provider affiliations cannot independently justify a proposal.")
     st.subheader("Source code & documentation")
     st.markdown("[Current experimental app source](https://github.com/harshitha-108/orglens-recovery-experimental) · [Original assessment repository and write-up](https://github.com/harshitha-108/orglens) · [Historical v1 AI-usage record](https://github.com/harshitha-108/orglens/blob/main/docs/AI_USAGE.md)")
     st.caption("The original repository describes historical v1. Check the experimental repository README for recovery source, documentation and the exact reproduction steps that were tested. These versions are not interchangeable.")
@@ -176,10 +141,10 @@ if nav=="How It Works":
 
 rows=catalogue(str(db_path))
 labels={cid:f'{case.replace("company_","Company ")} · {n} employees' for cid,case,n in rows}
-with st.container(key="company_summary",border=True):
-    selector,kpis=st.columns([2,4],gap="medium")
-    with selector:
-        company_key="focused_company" if focused else "company"
+with st.container(key="company_summary"):
+    selector,a,b,c=st.columns([1.45,1,1,1],gap="small")
+    with selector, st.container(key="company_picker"):
+        company_key="focused_company"
         saved_key=f"{company_key}_saved"
         if company_key not in st.session_state:
             st.session_state[company_key]=st.session_state.get(saved_key,next(iter(labels)))
@@ -191,9 +156,9 @@ with st.container(key="company_summary",border=True):
     evidence_chart=chart_payload(data)
     count=len(evidence_chart["edges"])
     unresolved=[eid for eid,r in relations.items() if r["proposed_manager_id"] is None]
-    with kpis:
-        a,b,c=st.columns(3)
-        a.metric("Visible employees",len(people));b.metric("Frozen proposals",count);c.metric("No manager proposal",len(unresolved))
+    a.metric("Visible employees",len(people))
+    b.metric("Proposed reporting lines",count)
+    c.metric("Employees without a manager proposal",len(unresolved))
 key=f"employee_{cid}"
 revision=f"focus_{cid}"
 if key not in st.session_state:
@@ -213,16 +178,12 @@ search_key=f"find_{cid}"
 chart,detail=st.columns([7,3],gap="medium")
 with chart, st.container(key="reporting_workspace",border=True):
     st.subheader("Organisation workspace")
-    view=st.radio("Presentation",["Evidence-based reporting chart","Possible organisational structure"],horizontal=True,key="chart_presentation")
-    hypothetical=view=="Possible organisational structure"
-    payload=role_payload(data["contacts"]) if hypothetical else evidence_chart
-    if hypothetical:
-        st.warning("Hypothetical title bands only. Connections are not established; no reporting links are drawn.")
-    else:
-        st.caption(f'{count} frozen proposals · {len(payload["groups"])} separate groups. Dashed arrows are unverified suggestions; group boundaries are for layout only.')
+    payload=evidence_chart
+    st.caption(f'{count} proposed reporting lines · {len(payload["groups"])} separate trees. Dashed connectors are unverified proposals.')
+    st.caption("Highlights: teal = selected employee, blue = proposed manager, amber = direct reports.")
     st.selectbox("Find an employee by name or job title",list(people),index=None,format_func=employee_label,key=search_key,on_change=select_employee,args=(search_key,),placeholder="Type a name or title")
     if payload["nodes"]:
-        mode="roles" if hypothetical else "evidence"
+        mode="evidence"
         event_key=f"event_{cid}_{mode}"
         event=company_chart(company=cid,payload=payload,selected=st.session_state[key],focus_revision=st.session_state.get(revision,0),key=f"chart_{cid}_{mode}",default=None)
         if isinstance(event,dict) and event.get("event") and event.get("event")!=st.session_state.get(event_key) and event.get("id") in people:
@@ -232,14 +193,14 @@ with chart, st.container(key="reporting_workspace",border=True):
         if st.session_state[key] not in {n["id"] for n in payload["nodes"]}:
             st.info("This employee has no linked node. See their profile for details.")
     else:
-        st.info("No suggested reporting links for this company. Browse the unresolved directory to see employees and why evidence was insufficient.")
-    with st.expander(f"Unresolved directory · {len(unresolved)} employees",expanded=not count):
-        if unresolved:
-            tray_key=f"unresolved_{cid}"
-            st.selectbox("Search unresolved employees",unresolved,index=None,format_func=employee_label,key=tray_key,on_change=select_employee,args=(tray_key,),placeholder="Type a name or title")
-            st.caption("Unresolved means no manager was proposed. A person may still appear in the chart as someone else’s suggested manager.")
-        else:
-            st.caption("No unresolved employees in this company.")
+        st.info("No suggested reporting links for this company. Browse the employee directory to see employees and why evidence was insufficient.")
+    linked={n["id"] for n in payload["nodes"]}
+    isolated=[eid for eid in people if eid not in linked]
+    with st.expander(f"Employees outside the chart · {len(isolated)}",expanded=not count):
+        if isolated:
+            tray_key=f"isolated_{cid}"
+            st.selectbox("Search employees outside the chart",isolated,index=None,format_func=employee_label,key=tray_key,on_change=select_employee,args=(tray_key,),placeholder="Type a name or title")
+        st.caption("This directory excludes tree roots: an employee with proposed direct reports remains on the chart even without a proposed manager.")
     st.download_button("Download frozen proposal graph",json.dumps(data["graph"],indent=2),"experimental_graph.json")
 eid=st.session_state[key]
 r=relations[eid];pred=r["prediction"]
@@ -250,8 +211,6 @@ with detail:
         st.caption("SELECTED EMPLOYEE")
         st.subheader(person["display_name"])
         st.caption(adapter.display(person.get("title"),"Title unavailable"))
-        if hypothetical:
-            st.caption("Profile below reflects the frozen evidence, not the title bands.")
         if manager:
             st.markdown("**Suggested direct manager**")
             st.write(people[manager]["display_name"])
