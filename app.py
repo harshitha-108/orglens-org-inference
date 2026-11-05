@@ -1,6 +1,8 @@
 """Assessment-focused presentation of unchanged frozen recovery proposals."""
 import json
 import hashlib
+import csv
+import io
 import streamlit as st
 import adapter
 from streamlit.components.v1 import declare_component
@@ -10,16 +12,16 @@ company_chart = declare_component("recovery_company_chart", path=str(adapter.ROO
 
 st.set_page_config(page_title="OrgLens | Explore Organisations", page_icon="◈", layout="wide")
 st.markdown("""<style>
-.block-container{padding-top:1.6rem;max-width:1680px;padding-bottom:3rem}[data-testid="stSidebar"]{background:#142942;color:#eef5ff}[data-testid="stSidebar"] p,[data-testid="stSidebar"] h2,[data-testid="stSidebar"] label{color:#eef5ff}
+.block-container{padding-top:1.15rem;max-width:1680px;padding-bottom:3rem}[data-testid="stSidebar"]{background:#142942;color:#eef5ff}[data-testid="stSidebar"] p,[data-testid="stSidebar"] h2,[data-testid="stSidebar"] label{color:#eef5ff}
 h1,h2,h3{letter-spacing:-.025em}h1{margin-bottom:0}
 div[data-testid="stMetric"]{background:#edf5f6;border:1px solid #dae9ed;border-radius:12px;padding:14px}
 div[data-testid="stMetricLabel"] p{white-space:normal}
 .kicker{font-size:.75rem;letter-spacing:.12em;color:#337b85;font-weight:650;margin-bottom:4px}
-.pipeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;padding:0;list-style:none}
+.pipeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0;list-style:none}
 .pipeline li{background:#edf5f6;border-top:3px solid #008b8b;border-radius:8px;padding:16px}
 [data-testid="stGraphVizChart"]{max-width:100%}\n.pipeline b{display:block;margin:6px 0}.pipeline small{line-height:1.5}
 @media(max-width:720px){.block-container{padding:1rem}.pipeline{grid-template-columns:1fr}.pipeline li{padding:12px}}
-.explore-hero{background:#142942;color:#f2f7ff;border-radius:14px;padding:16px 22px}
+.explore-hero{background:#142942;color:#f2f7ff;border-radius:14px;padding:8px 16px}
 .explore-hero>span{font-size:11px;font-weight:700;letter-spacing:.12em;color:#9ce2df}
 .explore-hero h1{color:white;font-size:1.8rem;padding:.25rem 0;margin:0}
 .explore-hero p{color:#d3e1ef;margin:0;font-size:.91rem}
@@ -27,14 +29,20 @@ div[data-testid="stMetricLabel"] p{white-space:normal}
 .st-key-reporting_workspace [data-testid="stVerticalBlock"],.st-key-employee_profile [data-testid="stVerticalBlock"]{gap:.65rem}
 .st-key-employee_profile [data-testid="stText"]{white-space:pre-wrap;overflow-wrap:anywhere}
 @media(max-width:720px){.explore-hero{padding:12px 15px}.explore-hero h1{font-size:1.4rem}}
-.st-key-company_summary [data-testid="stMetric"],.st-key-company_picker{height:114px;min-height:114px;background:#f0f6fa;border:1px solid #dce7ef;border-radius:12px;padding:12px;box-sizing:border-box}
+.st-key-company_summary [data-testid="stMetric"],.st-key-company_picker{height:100px;min-height:100px;background:#f0f6fa;border:1px solid #dce7ef;border-radius:12px;padding:12px;box-sizing:border-box}
 .st-key-company_summary [data-testid="stMetricLabel"],.st-key-company_picker label{min-height:2.4rem;display:flex;align-items:flex-start;margin:0}
+.st-key-company_summary [data-testid="stMetricLabel"],.st-key-company_summary [data-testid="stMetricLabel"] *{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;min-width:0}
 .st-key-company_summary [data-testid="stMetricValue"]{font-size:1.65rem}
 @media(max-width:720px){.st-key-company_summary [data-testid="stHorizontalBlock"]{flex-wrap:wrap}.st-key-company_summary [data-testid="stColumn"]{min-width:100%!important}.st-key-company_summary [data-testid="stMetric"],.st-key-company_picker{height:auto;min-height:78px}.st-key-company_summary [data-testid="stMetricLabel"],.st-key-company_picker label{min-height:0}}
+.st-key-company_picker [data-baseweb="select"]>div,.st-key-company_picker .react-aria-ComboBox div:has(>input){background:#d7eaf7!important;border:2px solid #4d718c!important;border-radius:9px}
+.st-key-company_picker [data-baseweb="select"]>div:focus-within,.st-key-company_picker .react-aria-ComboBox div:has(>input):focus-within{border-color:#087f86;box-shadow:0 0 0 3px #b5dfdf}
+.st-key-company_picker svg{color:#23445f}
+.st-key-employee_profile h3{color:#173e59}
+@media(max-width:720px){.st-key-reporting_workspace,.st-key-employee_profile{min-width:0}}
 </style>""", unsafe_allow_html=True)
 st.sidebar.header("OrgLens")
 st.sidebar.caption("COMPANY INTELLIGENCE")
-nav=st.sidebar.radio("Workspace",["Explore Organisations","Model Performance","How It Works"],key="workspace")
+nav=st.sidebar.radio("Workspace",["Explore Organisations","Focused Recovery","How It Works"],key="workspace")
 st.sidebar.caption("Synthetic companies · experimental research")
 if nav=="Explore Organisations":
     st.markdown("""<header class="explore-hero">
@@ -70,37 +78,31 @@ def checked_focused_release():
 
 release=checked_focused_release()
 db_path=adapter.ROOT/"runtime/recovery_focused.sqlite"
-if nav=="Explore Organisations":
-    st.caption("Synthetic companies · unverified reporting proposals")
  
-def source_panel(data,claim_ids,expanded=False):
-    for claim,doc in adapter.evidence(data,claim_ids):
-        kind=doc["document_kind"].replace("_"," ").title()
-        date=doc["published_at"][:10] if doc.get("published_at") else "Date unavailable"
-        with st.container(border=True):
-            st.caption(kind+" · "+date)
-            st.write(claim["quote"])
-            with st.expander("View original document & citation",expanded=expanded):
-                st.caption(f'Source {doc["source_id"]} · family {doc["document_family_id"]}')
-                st.caption(f'Exact text span [{claim["span_start"]}, {claim["span_end"]})')
-                st.caption(f'Published: {adapter.display(doc.get("published_at"))} · Available: {adapter.display(doc.get("available_at"))} · Retrieved: {adapter.display(doc.get("retrieved_at"))}')
-                st.caption(f'Effective: {adapter.display(claim.get("effective_from"))} to {adapter.display(claim.get("effective_to"))}')
-                st.caption('Provenance: synthetic source. Copy-family identifiers are scoped to this company; independence is a modelling assumption.')
-                st.text(doc["text"])
+def table_csv(headers, rows):
+    """Write an Excel-friendly table and neutralise spreadsheet formulas."""
+    output=io.StringIO()
+    writer=csv.writer(output)
+    writer.writerow(headers)
+    for row in rows:
+        writer.writerow(["'"+v if isinstance(v,str) and v.lstrip().startswith(("=","+","-","@")) else v for v in row])
+    return output.getvalue().encode("utf-8-sig")
 
-if nav=="Model Performance":
+if nav=="Focused Recovery":
     st.header("Focused recovery · fresh 500-company scale-up")
     st.write("These frozen synthetic results match the selected runtime. The previous scale-up is a different cohort, not a paired comparison.")
     full=metrics("focused_scale_metrics.json");v=full["views"]["messy"];stats=release["stats"]
     assert (stats["companies"],stats["employees"],stats["proposals"])==(len(full["companies"]),v["employees"],v["selected"])
-    a,b,c=st.columns(3)
+    a,b,c,d=st.columns(4)
     a.metric("Scored precision",f'{v["precision"]:.2%}')
-    b.metric("All-visible coverage",f'{v["coverage"]:.2%}')
+    b.metric("Employee coverage",f'{v["coverage"]:.2%}')
     c.metric("Candidate recall · manager visible",f'{v["full_pool_recall"]:.2%}')
+    d.metric("Correct two-link chains",f'{v["correct_two_hop"]:,}')
     st.write(f'**{stats["companies"]} companies · {v["employees"]:,} visible employees · {v["selected"]:,} proposals**')
     st.write(f'{v["correct"]:,} correct · {v["wrong"]:,} wrong · {v["unknown_selected"]:,} unscorable · {v["unresolved"]:,} unresolved. Structural violations: {v["structural_violations"]}.')
     st.write(f'{v["correct_two_hop"]:,} employees have a correct two-edge reporting chain, out of {v["available_two_hop_employees"]:,} with a scorable visible chain available.')
-    st.info("Individual confidence is unavailable. Sources support suggestions, not independently confirmed reporting lines. Confirmed lines: 0.")
+    st.caption(f'Precision: {v["correct"]:,} of {v["correct"]+v["wrong"]:,} scored proposals. Coverage uses all visible employees. Recall counts employees whose true manager is visible.')
+    st.info("These results are synthetic. Observed precision does not guarantee real-world performance. OrgLens leaves managers unresolved when evidence is insufficient. Individual confidence is unavailable. Sources support suggestions, not independently confirmed reporting lines. Confirmed lines: 0.")
     st.subheader("Independent validation · same 30 fresh companies")
     paired=metrics("focused_validation_metrics.json")
     st.table([{"Arm":label,"Precision":f'{m["precision"]:.2%}',"Coverage":f'{m["coverage"]:.2%}',"Candidate recall":f'{m["full_pool_recall"]:.2%}',"Correct two-edge chains":m["correct_two_hop"]} for label,key in [("Baseline","baseline"),("Focused","focused")] for m in [paired[key]["views"]["messy"]]])
@@ -110,8 +112,6 @@ if nav=="Model Performance":
     with st.expander("Methodology and limitations"):
         st.write("Synthetic disclosure and error assumptions limit generalisation. The paired validation measures the combined publication, extraction and guard changes, not the effect of each change. No real-world validation or calibrated individual probabilities are available.")
         st.write("Two-edge chains count only when both selected edges match scorable synthetic truth. Unknown truth is excluded from precision but included in coverage. Original stricter publication requirements are not satisfied.")
-        st.download_button("Download focused scale-up metrics",(adapter.ROOT/"evidence/focused_scale_metrics.json").read_bytes(),"focused_scale_metrics.json")
-        st.download_button("Download paired validation metrics",(adapter.ROOT/"evidence/focused_validation_metrics.json").read_bytes(),"focused_validation_metrics.json")
     st.stop()
 
 if nav=="How It Works":
@@ -124,13 +124,10 @@ if nav=="How It Works":
 <li><small>04 · INFERENCE</small><b>Propose or abstain</b><small>Combine compatible evidence. Shared, missing or conflicting responsibility can remain unresolved.</small></li>
 <li><small>05 · EVALUATION</small><b>Score separately</b><small>Freeze predictions before a separate evaluator opens hidden synthetic truth.</small></li>
 </ol>""",unsafe_allow_html=True)
-    a,b=st.columns(2)
-    with a:
-        st.subheader("What supports a suggestion?")
+    with st.expander("What supports a suggestion?"):
         st.write("A source identifies an employee’s team. Another source describes a named person’s people-management responsibility for that team. Dates, identity resolution and competing responsibilities must also be compatible.")
         st.write("A senior title, a shared department or project leadership alone does not establish a direct manager. The pipeline may abstain.")
-    with b:
-        st.subheader("What makes the work inspectable?")
+    with st.expander("Source provenance and evaluation safeguards"):
         st.write("Every selected proposal has exact quotes, document IDs, dates and copy-family provenance. Fixed seeds and frozen code, inputs and predictions make the synthetic evaluation reproducible. The runtime contains no hidden manager labels or per-person correctness verdicts.")
         st.write("Source independence and company realism are modelling assumptions, not external validation. Inferred reporting paths do not prove purchasing authority.")
     st.write("Focused recovery adds dated staff registers derived from pre-reporting facts. Leadership-team duties are matched only to leadership-team membership; provider affiliations cannot independently justify a proposal.")
@@ -166,7 +163,7 @@ if key not in st.session_state:
 
 def employee_label(eid):
     person=people[eid]
-    return f'{person["display_name"]} · {adapter.display(person.get("title"),"Title unavailable")} · {eid[:6]}'
+    return f'{person["display_name"]} · {adapter.display(person.get("title"),"Job title not listed")} · {eid[:6]}'
 
 def select_employee(widget_key):
     eid=st.session_state[widget_key]
@@ -175,12 +172,11 @@ def select_employee(widget_key):
         st.session_state[revision]=st.session_state.get(revision,0)+1
 
 search_key=f"find_{cid}"
-chart,detail=st.columns([7,3],gap="medium")
+chart,detail=st.columns([7,3],gap="small")
 with chart, st.container(key="reporting_workspace",border=True):
     st.subheader("Organisation workspace")
     payload=evidence_chart
-    st.caption(f'{count} proposed reporting lines · {len(payload["groups"])} separate trees. Dashed connectors are unverified proposals.')
-    st.caption("Highlights: teal = selected employee, blue = proposed manager, amber = direct reports.")
+    st.caption("Dashed lines show evidence-based suggestions, not confirmed reports. Employees without chart links are still searchable.")
     st.selectbox("Find an employee by name or job title",list(people),index=None,format_func=employee_label,key=search_key,on_change=select_employee,args=(search_key,),placeholder="Type a name or title")
     if payload["nodes"]:
         mode="evidence"
@@ -201,50 +197,52 @@ with chart, st.container(key="reporting_workspace",border=True):
             tray_key=f"isolated_{cid}"
             st.selectbox("Search employees outside the chart",isolated,index=None,format_func=employee_label,key=tray_key,on_change=select_employee,args=(tray_key,),placeholder="Type a name or title")
         st.caption("This directory excludes tree roots: an employee with proposed direct reports remains on the chart even without a proposed manager.")
-    st.download_button("Download frozen proposal graph",json.dumps(data["graph"],indent=2),"experimental_graph.json")
+    if count:
+        st.download_button("Download reporting lines (CSV for Excel)",table_csv(
+            ["Employee","Employee title","Suggested manager","Manager title","Status"],
+            [(people[e]["display_name"],adapter.display(people[e].get("title")),people[m]["display_name"],
+              adapter.display(people[m].get("title")),"Unverified proposal") for m,e in payload["edges"]]
+        ),"orglens-reporting-lines.csv","text/csv")
 eid=st.session_state[key]
 r=relations[eid];pred=r["prediction"]
 with detail:
     with st.container(key="employee_profile",border=True):
         person=people[eid]
         manager=r["proposed_manager_id"]
-        st.caption("SELECTED EMPLOYEE")
+        st.caption("EMPLOYEE PROFILE")
         st.subheader(person["display_name"])
-        st.caption(adapter.display(person.get("title"),"Title unavailable"))
+        st.caption(adapter.display(person.get("title"),"Job title not listed"))
+        if not person.get("title") or (manager and not people[manager].get("title")):
+            st.caption("A missing job title does not rule out a suggestion. Team records can show where someone works and who manages that team.")
         if manager:
             st.markdown("**Suggested direct manager**")
             st.write(people[manager]["display_name"])
-            st.caption(adapter.display(people[manager].get("title"),"Title unavailable"))
-            st.caption("Unverified suggestion · individual confidence unavailable")
+            st.caption(adapter.display(people[manager].get("title"),"Job title not listed"))
+            st.caption("Suggested from the available records. The reporting line is not confirmed.")
         else:
-            st.markdown("**Suggested direct manager: not enough evidence**")
-            st.caption("Manager unresolved · no proposal")
+            st.markdown("**Manager unresolved — insufficient evidence**")
         claims=adapter.evidence(data,pred["evidence_claim_ids"])
         member=next((c for c,_ in claims if c["kind"]=="membership"),None)
         duty=next((c for c,_ in claims if c["kind"]=="people_accountability"),None)
         if manager and member and duty:
-            st.write(f'Sources place this employee in {member.get("team_raw") or "a team"} and describe the suggested manager’s people-management duties for {duty.get("team_raw") or "that team"}.')
+            st.write(f'The records list this employee on {member.get("team_raw") or "a team"} and name the suggested manager as responsible for staff on that team.')
         elif manager:
             st.write("The sources below support this suggestion without confirming a reporting line.")
         else:
-            st.write(adapter.reason_text(pred["reasons"][0]) if pred["reasons"] else "The sources do not identify a direct manager.")
+            st.write("Available records do not provide enough evidence to identify a direct manager.")
+        reports=[people[e]["display_name"] for m,e in evidence_chart["edges"] if m==eid]
+        if reports:
+            st.markdown(f"**Proposed direct reports · {len(reports)}**")
+            st.write(", ".join(reports))
         if claims:
-            st.markdown("**Supporting evidence**")
+            st.markdown("**Why this manager was suggested**")
             for quote in dict.fromkeys(c["quote"] for c,_ in claims):
-                st.text(quote)
-            with st.expander("Source documents and exact citations"):
-                for claim,doc in claims:
-                    st.caption(f'Source {doc["source_id"]} · family {doc["document_family_id"]} · exact text span [{claim["span_start"]}, {claim["span_end"]})')
-                    st.caption(f'Published: {adapter.display(doc.get("published_at"))} · Available: {adapter.display(doc.get("available_at"))} · Retrieved: {adapter.display(doc.get("retrieved_at"))}')
-                    st.caption(f'Effective: {adapter.display(claim.get("effective_from"))} to {adapter.display(claim.get("effective_to"))} · {adapter.display(doc.get("provenance_status"))}')
-                    st.text(doc["text"])
-        alternatives=[c for c in pred["candidates"] if not manager or c.get("manager_id")!=manager]
-        if alternatives:
-            with st.expander("Alternative or rejected evidence"):
-                for candidate in alternatives:
-                    st.write(adapter.display(candidate.get("manager_name")))
-                    for explanation in dict.fromkeys(adapter.reason_text(code) for code in candidate.get("reasons",[])):
-                        st.caption(explanation)
-                    source_panel(data,list(dict.fromkeys(candidate.get("claim_ids",[]))))
-        with st.expander("Stored prediction details"):
-            st.json(pred)
+                st.markdown("> " + quote.replace("\n", "\n> "))
+if claims:
+    with st.expander(f"Original records for {person['display_name']}"):
+        st.caption("Open these records if you want to check where the quotes came from.")
+        for claim,doc in claims:
+            st.caption(f'Source {doc["source_id"]} · family {doc["document_family_id"]} · exact text span [{claim["span_start"]}, {claim["span_end"]})')
+            st.caption(f'Published: {adapter.display(doc.get("published_at"))} · Available: {adapter.display(doc.get("available_at"))} · Retrieved: {adapter.display(doc.get("retrieved_at"))}')
+            st.caption(f'Effective: {adapter.display(claim.get("effective_from"))} to {adapter.display(claim.get("effective_to"))} · {adapter.display(doc.get("provenance_status"))}')
+            st.text(doc["text"])
