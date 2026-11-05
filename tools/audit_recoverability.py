@@ -49,6 +49,8 @@ def audit_company(folder, predroot, truthroot, label):
     visible = {c["employee_id"] for c in contacts}
     predictions = read(predroot / case / (label + "_predictions.json"))
     claims = read(predroot / case / (label + "_claims.json"))
+    view = read(folder / (label + ".json"))
+    provenance = {d["source_id"]: d.get("provenance_status") for d in view["documents"]}
     truth = read(truthroot / case / "technical_audit" / "truth.json")
     if len(predictions) != len(visible) or {p["employee_id"] for p in predictions} != visible:
         raise ValueError("Incomplete or duplicate predictions in " + case)
@@ -85,6 +87,11 @@ def audit_company(folder, predroot, truthroot, label):
             counts["true_manager_absent_from_roster"] += 1
             continue
         counts["true_manager_visible"] += 1
+        selected_ids = set(p.get("evidence_claim_ids", []))
+        if mid is not None and any(provenance.get(c["source_id"]) == "uncorroborated_provider" for c in claims if c["claim_id"] in selected_ids):
+            counts["selected_with_uncorroborated_provider_citation"] += 1
+            if mid not in actual:
+                counts["wrong_selected_with_uncorroborated_provider_citation"] += 1
         if mid in actual:
             counts["correctly_selected"] += 1
         elif mid is not None:
@@ -123,11 +130,6 @@ def audit_company(folder, predroot, truthroot, label):
 
         if any(c.get("manager_id") not in actual for c in p["candidates"]):
             counts["had_competing_candidate"] += 1
-        if any(c["kind"] == "membership" and c.get("contact_id") == eid and
-               c["source_id"].startswith("provider") for c in claims):
-            # Source IDs are hashed in this project; retained only as a placeholder
-            # for a future explicit provenance join, not a trustworthy detector.
-            counts["provider_source_id_heuristic_not_used"] += 0
     return counts
 
 def run(source_root, prediction_root, truth_root, label):
