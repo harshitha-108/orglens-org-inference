@@ -218,8 +218,8 @@ if nav=="How It Works":
         st.write("Source independence and company realism are modelling assumptions, not external validation. Inferred reporting paths do not prove purchasing authority.")
     st.write("Focused recovery adds dated staff registers derived from pre-reporting facts. Leadership-team duties are matched only to leadership-team membership; provider affiliations cannot independently justify a proposal.")
     st.subheader("Source code & documentation")
-    st.markdown("[Current experimental app source](https://github.com/harshitha-108/orglens-org-inference) · [Original assessment repository and write-up](https://github.com/harshitha-108/orglens) · [Historical v1 AI-usage record](https://github.com/harshitha-108/orglens/blob/main/docs/AI_USAGE.md)")
-    st.caption("The original repository describes historical v1. Check the experimental repository README for recovery source, documentation and the exact reproduction steps that were tested. These versions are not interchangeable.")
+    st.markdown("[Current experimental app source](https://github.com/harshitha-108/orglens-org-inference)")
+    st.caption("See the repository README for documentation and the reproduction steps that were tested.")
     st.stop()
 
 rows=catalogue(str(db_path))
