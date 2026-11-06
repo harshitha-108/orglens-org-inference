@@ -1,6 +1,7 @@
 """Assessment-focused presentation of unchanged frozen recovery proposals."""
 import json
 import hashlib
+from datetime import datetime
 from html import escape
 import csv
 import io
@@ -217,7 +218,7 @@ if nav=="How It Works":
         st.write("Source independence and company realism are modelling assumptions, not external validation. Inferred reporting paths do not prove purchasing authority.")
     st.write("Focused recovery adds dated staff registers derived from pre-reporting facts. Leadership-team duties are matched only to leadership-team membership; provider affiliations cannot independently justify a proposal.")
     st.subheader("Source code & documentation")
-    st.markdown("[Current experimental app source](https://github.com/harshitha-108/orglens-recovery-experimental) · [Original assessment repository and write-up](https://github.com/harshitha-108/orglens) · [Historical v1 AI-usage record](https://github.com/harshitha-108/orglens/blob/main/docs/AI_USAGE.md)")
+    st.markdown("[Current experimental app source](https://github.com/harshitha-108/orglens-org-inference) · [Original assessment repository and write-up](https://github.com/harshitha-108/orglens) · [Historical v1 AI-usage record](https://github.com/harshitha-108/orglens/blob/main/docs/AI_USAGE.md)")
     st.caption("The original repository describes historical v1. Check the experimental repository README for recovery source, documentation and the exact reproduction steps that were tested. These versions are not interchangeable.")
     st.stop()
 
@@ -321,6 +322,53 @@ with st.container(key="reporting_workspace",border=True):
             [(people[e]["display_name"],adapter.display(people[e].get("title")),people[m]["display_name"],
               adapter.display(people[m].get("title")),"Unverified proposal") for m,e in payload["edges"]]
         ),"orglens-reporting-lines.csv","text/csv")
+def publication_date(value):
+    if not value or not str(value).strip():
+        return "Publication date unavailable"
+    try:
+        date = datetime.fromisoformat(str(value).strip())
+    except ValueError:
+        return "Publication date uncertain"
+    return f"Published {date.day} {date:%b %Y}"
+
+
+def supporting_evidence(claims):
+    source_labels = {
+        "synthetic_company_website": "Synthetic company website",
+        "synthetic_company_profile": "Synthetic company profile",
+        "synthetic_contact_provider": "Synthetic contact provider",
+    }
+    explanations = {
+        "membership": "This record links the employee to the team.",
+        "people_accountability": "This record describes the suggested manager’s responsibility for staff.",
+    }
+    st.markdown("**Supporting evidence**")
+    for claim, doc in claims:
+        source_type = adapter.display(doc.get("source_type"), "Source type unavailable")
+        label = source_labels.get(source_type, source_type.replace("_", " ").capitalize())
+        date = publication_date(doc.get("published_at"))
+        explanation = explanations.get(claim["kind"], "This is a source cited for the suggestion.")
+        with st.container(border=True):
+            st.markdown(
+                f'<div><strong>{escape(label)}</strong> · {escape(date)}</div>'
+                f'<blockquote style="white-space:pre-wrap;overflow-wrap:anywhere">'
+                f'{escape(claim["quote"])}</blockquote>'
+                f'<small>{escape(explanation)}</small>',
+                unsafe_allow_html=True,
+            )
+
+    with st.expander("Technical source details"):
+        for number, (claim, doc) in enumerate(claims, 1):
+            st.markdown(f"**Record {number}**")
+            st.caption(f'Source {doc["source_id"]} · family {doc["document_family_id"]} · exact text span [{claim["span_start"]}, {claim["span_end"]})')
+            st.caption(f'Published: {adapter.display(doc.get("published_at"))} · Available: {adapter.display(doc.get("available_at"))} · Retrieved: {adapter.display(doc.get("retrieved_at"))}')
+            st.caption(f'Effective: {adapter.display(claim.get("effective_from"))} to {adapter.display(claim.get("effective_to"))} · Provenance: {adapter.display(doc.get("provenance_status"))}')
+            flags = ", ".join(claim.get("flags") or [])
+            if flags:
+                st.caption(f"Evidence flags: {flags}")
+            st.text(doc["text"])
+
+
 @st.dialog("Employee profile", width="medium")
 def employee_profile(eid):
     r=relations[eid];pred=r["prediction"]
@@ -368,17 +416,7 @@ def employee_profile(eid):
             st.markdown("**Who may report to this employee**")
             st.write(", ".join(reports))
         if claims:
-            st.markdown("**Why this manager was suggested**")
-            for quote in dict.fromkeys(c["quote"] for c,_ in claims):
-                st.markdown("> " + quote.replace("\n", "\n> "))
-    if claims:
-        with st.expander(f"Original records for {person['display_name']}"):
-            st.caption("Open these records if you want to check where the quotes came from.")
-            for claim,doc in claims:
-                st.caption(f'Source {doc["source_id"]} · family {doc["document_family_id"]} · exact text span [{claim["span_start"]}, {claim["span_end"]})')
-                st.caption(f'Published: {adapter.display(doc.get("published_at"))} · Available: {adapter.display(doc.get("available_at"))} · Retrieved: {adapter.display(doc.get("retrieved_at"))}')
-                st.caption(f'Effective: {adapter.display(claim.get("effective_from"))} to {adapter.display(claim.get("effective_to"))} · {adapter.display(doc.get("provenance_status"))}')
-                st.text(doc["text"])
+            supporting_evidence(claims)
 
 if st.session_state.pop(f"profile_request_{cid}", False):
     employee_profile(st.session_state[key])
